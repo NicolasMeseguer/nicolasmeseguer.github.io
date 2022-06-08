@@ -6,6 +6,10 @@ $('#projectsContent').hide();
 
 $(document).ready(function(){
 
+	$.getJSON("https://api.countapi.xyz/hit/nicolasmeseguer.github.io/634c2142-b35d-430e-b51c-dad16880dd3a", function(response) {
+		$("#contadorVisitas").text(response.value);
+	});
+
 	// Handle 'About Me' content
 	$('#aboutme').click(function(e) {
 
@@ -128,4 +132,10 @@ function activateLink(e) {
 function activateDiv(divId) {
 	$(divId).addClass('active');
 	$(divId).show();
+}
+
+function resetViews() {
+	$.getJSON("https://api.countapi.xyz/set/nicolasmeseguer.github.io/634c2142-b35d-430e-b51c-dad16880dd3a?value=0", function(response) {
+		$("#contadorVisitas").text("0");
+	});
 }
