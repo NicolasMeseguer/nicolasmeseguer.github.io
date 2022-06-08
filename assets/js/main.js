@@ -93,6 +93,19 @@ $(document).ready(function(){
 	});
 
 
+	// Control the window size, and change a class to the img
+	$(window).resize(function() {
+		if( $(window).width() < 751 && !$('#nicolasmeseguerpicture').hasClass('mx-auto')) {
+			$('#nicolasmeseguerpicture').addClass('mx-auto');
+			$('#nicolasmeseguerpicture').removeClass('me-auto');
+		}
+		else if($(window).width() >= 751 && !$('#nicolasmeseguerpicture').hasClass('me-auto')) {
+			$('#nicolasmeseguerpicture').addClass('me-auto');
+			$('#nicolasmeseguerpicture').removeClass('mx-auto');
+
+		}
+	  });
+
 });
 
 function clearActiveLinks() {
