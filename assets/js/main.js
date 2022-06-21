@@ -97,15 +97,32 @@ $(document).ready(function(){
 	});
 
 
-	// Control the window size, and change a class to the img
+	// Control the window size
 	$(window).resize(function() {
-		if( $(window).width() < 751 && !$('#nicolasmeseguerpicture').hasClass('mx-auto')) {
-			$('#nicolasmeseguerpicture').addClass('mx-auto');
-			$('#nicolasmeseguerpicture').removeClass('me-auto');
+		if( $(window).width() < 751 ) {
+
+			// Centers the profile picture in mobile's view
+			if(!$('#nicolasmeseguerpicture').hasClass('mx-auto')) {
+				$('#nicolasmeseguerpicture').addClass('mx-auto');
+				$('#nicolasmeseguerpicture').removeClass('me-auto');
+			}
+
+			// Center the h4 "Hobbies" for mobile's view
+			if(!$('#hobbiesH4').hasClass('text-center')) {
+				$('#hobbiesH4').addClass('text-center')
+			}
+
 		}
-		else if($(window).width() >= 751 && !$('#nicolasmeseguerpicture').hasClass('me-auto')) {
-			$('#nicolasmeseguerpicture').addClass('me-auto');
-			$('#nicolasmeseguerpicture').removeClass('mx-auto');
+		else if($(window).width() >= 751 ) {
+
+			if(!$('#nicolasmeseguerpicture').hasClass('me-auto')) {
+				$('#nicolasmeseguerpicture').addClass('me-auto');
+				$('#nicolasmeseguerpicture').removeClass('mx-auto');
+			}
+
+			if($('#hobbiesH4').hasClass('text-center')) {
+				$('#hobbiesH4').removeClass('text-center')
+			}
 
 		}
 	  });
