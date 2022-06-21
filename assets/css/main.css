@@ -16,3 +16,7 @@ li > .active {
 .nombre-it {
 	font-weight: 300;
 }
+
+.tfx-it {
+	font-style: italic;
+}
