@@ -2,7 +2,11 @@
 $('#educationContent').hide();
 $('#publicationsContent').hide();
 $('#experienceContent').hide();
+$('#conferencesContent').hide();
 $('#projectsContent').hide();
+/* Template
+$('#nameContent').hide();
+*/
 
 $(document).ready(function(){
 
@@ -62,6 +66,23 @@ $(document).ready(function(){
 		}
 	});
 
+	// Handle 'Conferences' content
+	$('#conferences').click(function(e) {
+
+		// If the div has already the class active, no need to reload the divs...
+		if(!$(e.target).hasClass('active')) {
+			// Update navbar
+			clearActiveLinks();
+			activateLink(e);
+
+			// Hide other contents
+			clearActiveDivs();
+
+			// Show current content
+			activateDiv('#conferencesContent');
+		}
+	});
+
 	// Handle 'Experience' content
 	$('#experience').click(function(e) {
 
@@ -95,6 +116,25 @@ $(document).ready(function(){
 			activateDiv('#projectsContent');
 		}
 	});
+
+	/*
+	// Handle 'Template' content
+	$('#name').click(function(e) {
+
+		// If the div has already the class active, no need to reload the divs...
+		if(!$(e.target).hasClass('active')) {
+			// Update navbar
+			clearActiveLinks();
+			activateLink(e);
+
+			// Hide other contents
+			clearActiveDivs();
+
+			// Show current content
+			activateDiv('#nameContent');
+		}
+	});
+	*/
 
 
 	// Control the window size
