@@ -152,6 +152,13 @@ $(document).ready(function(){
 				$('#hobbiesH4').addClass('text-center')
 			}
 
+			// Center each of the hobbies divs
+			if(!$('#hobbie1').hasClass('text-center')) {
+				$('#hobbie1').addClass('text-center mt-2')
+				$('#hobbie2').addClass('text-center mt-2')
+				$('#hobbie3').addClass('text-center mt-2')
+			}
+
 		}
 		else if($(window).width() >= 751 ) {
 
@@ -162,6 +169,12 @@ $(document).ready(function(){
 
 			if($('#hobbiesH4').hasClass('text-center')) {
 				$('#hobbiesH4').removeClass('text-center')
+			}
+
+			if($('#hobbie1').hasClass('text-center')) {
+				$('#hobbie1').removeClass('text-center mt-2')
+				$('#hobbie2').removeClass('text-center mt-2')
+				$('#hobbie3').removeClass('text-center mt-2')
 			}
 
 		}
