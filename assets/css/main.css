@@ -20,3 +20,13 @@ li > .active {
 .tfx-it {
 	font-style: italic;
 }
+
+.custom-h2 {
+	font-size: 3.2em;
+	font-weight: 100;
+}
+
+.left-border {
+	border-left: 2px #D9DDDC solid;
+	padding-left: 15px;
+}
