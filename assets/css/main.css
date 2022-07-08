@@ -30,3 +30,19 @@ li > .active {
 	border-left: 2px #D9DDDC solid;
 	padding-left: 15px;
 }
+
+.pub-title {
+	font-style: italic;
+}
+
+.pub-authors {
+	font-weight: 400;
+}
+
+.pub-authors .pub-author {
+	font-weight: 500;
+}
+
+.pub-congress {
+	font-weight: 100;
+}
