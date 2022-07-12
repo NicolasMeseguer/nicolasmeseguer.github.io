@@ -13,6 +13,11 @@ li > .active {
 	min-height: 150px;
 }
 
+.honors-bullet{
+	font-size: 16px;
+	margin-left: 40px;
+}
+
 .nombre-it {
 	font-weight: 300;
 }
