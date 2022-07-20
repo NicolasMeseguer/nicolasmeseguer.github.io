@@ -18,6 +18,10 @@ li > .active {
 	margin-left: 40px;
 }
 
+.force-margin-left {
+	margin-left: 10px !important;
+}
+
 .nombre-it {
 	font-weight: 300;
 }

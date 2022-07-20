@@ -136,6 +136,16 @@ $(document).ready(function(){
 	});
 	*/
 
+	// Copy the citation to the clipboard
+	// THIS SHOULD BE THE SAME FOR ALL THE PAPERS
+	$(document).on("click", "#citation", function(){
+		var text = $(this).parent().parent().next()[0].innerHTML;
+
+		navigator.clipboard.writeText(text);
+
+		toastr.success('Citation copied');
+	});
+
 
 	// Control the window size
 	$(window).resize(function() {
