@@ -8,6 +8,8 @@ $('#projectsContent').hide();
 $('#nameContent').hide();
 */
 
+var mobileVersion;
+
 $(document).ready(function(){
 
 	$.getJSON("https://api.countapi.xyz/hit/nicolasmeseguer.github.io/634c2142-b35d-430e-b51c-dad16880dd3a", function(response) {
@@ -146,51 +148,66 @@ $(document).ready(function(){
 		toastr.success('Citation copied');
 	});
 
+	// Sanity check, so we dont have to wait until a resize event
+	if( $(window).width() < 751 )
+		downscalePage();
 
 	// Control the window size
 	$(window).resize(function() {
 		if( $(window).width() < 751 ) {
 
-			// Centers the profile picture in mobile's view
-			if(!$('#nicolasmeseguerpicture').hasClass('mx-auto')) {
-				$('#nicolasmeseguerpicture').addClass('mx-auto');
-				$('#nicolasmeseguerpicture').removeClass('me-auto');
-			}
-
-			// Center the h4 "Hobbies" for mobile's view
-			if(!$('#hobbiesH4').hasClass('text-center')) {
-				$('#hobbiesH4').addClass('text-center')
-			}
-
-			// Center each of the hobbies divs
-			if(!$('#hobbie1').hasClass('text-center')) {
-				$('#hobbie1').addClass('text-center mt-2')
-				$('#hobbie2').addClass('text-center mt-2')
-				$('#hobbie3').addClass('text-center mt-2')
-			}
-
+			// Downscales the page
+			downscalePage();
 		}
 		else if($(window).width() >= 751 ) {
 
-			if(!$('#nicolasmeseguerpicture').hasClass('me-auto')) {
-				$('#nicolasmeseguerpicture').addClass('me-auto');
-				$('#nicolasmeseguerpicture').removeClass('mx-auto');
-			}
-
-			if($('#hobbiesH4').hasClass('text-center')) {
-				$('#hobbiesH4').removeClass('text-center')
-			}
-
-			if($('#hobbie1').hasClass('text-center')) {
-				$('#hobbie1').removeClass('text-center mt-2')
-				$('#hobbie2').removeClass('text-center mt-2')
-				$('#hobbie3').removeClass('text-center mt-2')
-			}
-
+			// Upscales the page
+			upscalePage();
 		}
 	  });
 
 });
+
+function downscalePage() {
+	// Centers the profile picture in mobile's view
+	if(!$('#nicolasmeseguerpicture').hasClass('mx-auto')) {
+		$('#nicolasmeseguerpicture').addClass('mx-auto');
+		$('#nicolasmeseguerpicture').removeClass('me-auto');
+	}
+
+	// Center the h4 "Hobbies" for mobile's view
+	if(!$('#hobbiesH4').hasClass('text-center')) {
+		$('#hobbiesH4').addClass('text-center')
+	}
+
+	// Center each of the hobbies divs
+	if(!$('#hobbie1').hasClass('text-center')) {
+		$('#hobbie1').addClass('text-center mt-2')
+		$('#hobbie2').addClass('text-center mt-2')
+		$('#hobbie3').addClass('text-center mt-2')
+	}
+
+	mobileVersion = true;
+}
+
+function upscalePage() {
+	if(!$('#nicolasmeseguerpicture').hasClass('me-auto')) {
+		$('#nicolasmeseguerpicture').addClass('me-auto');
+		$('#nicolasmeseguerpicture').removeClass('mx-auto');
+	}
+
+	if($('#hobbiesH4').hasClass('text-center')) {
+		$('#hobbiesH4').removeClass('text-center')
+	}
+
+	if($('#hobbie1').hasClass('text-center')) {
+		$('#hobbie1').removeClass('text-center mt-2')
+		$('#hobbie2').removeClass('text-center mt-2')
+		$('#hobbie3').removeClass('text-center mt-2')
+	}
+
+	mobileVersion = false;
+}
 
 function clearActiveLinks() {
 	$('#navbarList .nav-item .nav-link').each(function() {
@@ -212,6 +229,17 @@ function activateLink(e) {
 function activateDiv(divId) {
 	$(divId).addClass('active');
 	$(divId).show();
+
+	// Scrolls to the content
+	scrollToContent(divId);
+}
+
+function scrollToContent(divId) {
+	if (mobileVersion) {
+		$('html, body').animate({
+			scrollTop: $(divId).offset().top
+		}, 1);
+	}
 }
 
 function resetViews() {

@@ -55,3 +55,8 @@ li > .active {
 .pub-congress {
 	font-weight: 100;
 }
+
+.justify {
+	text-align: justify;
+  	text-justify: inter-word;
+}
