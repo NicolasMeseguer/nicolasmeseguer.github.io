@@ -40,6 +40,22 @@ li > .active {
 	padding-left: 15px;
 }
 
+.clickable {
+	cursor: pointer;
+	transition: .3s;
+	box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+}
+
+.clickable:hover {
+	box-shadow: 0px 20px 40px rgba(0,0,0,0.4);
+	transform: scale(1.03,1.03);
+}
+
+.all-border {
+	border: 2px #D9DDDC solid;
+	padding: 15px;
+}
+
 .pub-title {
 	font-style: italic;
 }
@@ -59,4 +75,35 @@ li > .active {
 .justify {
 	text-align: justify;
   	text-justify: inter-word;
+}
+
+.blog-info {
+	font-weight: 100;
+	width: 100%;
+	clear: both;
+	display: block;
+}
+
+.blog-short {
+	font-weight: 400;
+	font-size: 17px;
+	color: #717378;
+}
+
+.blog-tags > .tag {
+	border-radius: 25px;
+	padding: 8px;
+	font-size: 15px;
+	font-weight: 600;
+	box-shadow: 0px 3px 10px rgba(0,0,0,0.4);
+}
+
+.blog-tags > .t-purple {
+	background-color: rgb(137, 70, 255, 0.8);
+	color: white;
+}
+
+.blog-tags > .t-lime {
+	background-color: rgba(118, 185, 0, 0.8);
+	color: white;
 }

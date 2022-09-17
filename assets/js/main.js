@@ -4,6 +4,7 @@ $('#publicationsContent').hide();
 $('#experienceContent').hide();
 $('#conferencesContent').hide();
 $('#projectsContent').hide();
+$('#blogContent').hide();
 /* Template
 $('#nameContent').hide();
 */
@@ -65,6 +66,23 @@ $(document).ready(function(){
 
 			// Show current content
 			activateDiv('#publicationsContent');
+		}
+	});
+
+	// Handle 'Blog' content
+	$('#blog').click(function(e) {
+
+		// If the div has already the class active, no need to reload the divs...
+		if(!$(e.target).hasClass('active')) {
+			// Update navbar
+			clearActiveLinks();
+			activateLink(e);
+
+			// Hide other contents
+			clearActiveDivs();
+
+			// Show current content
+			activateDiv('#blogContent');
 		}
 	});
 
