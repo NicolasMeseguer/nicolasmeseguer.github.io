@@ -156,6 +156,13 @@ $(document).ready(function(){
 	});
 	*/
 
+	// Whenever you clic on a blog post, you should be redirected to that post' html
+	$('.clickable').click(function(e) {
+		var blogPostURL = window.location.origin + "/blog/" + $(e.currentTarget)[0].childNodes[1].innerText;
+		
+		window.location = blogPostURL;
+	});
+
 	// Copy the citation to the clipboard
 	// THIS SHOULD BE THE SAME FOR ALL THE PAPERS
 	$(document).on("click", "#citation", function(){
@@ -183,6 +190,12 @@ $(document).ready(function(){
 			upscalePage();
 		}
 	  });
+
+	// Controls the URL; if it has '#blog'
+	// then trigger the 'Blog' clic
+	if (((window.location).href).substring(((window.location).href).lastIndexOf('#') + 1) == 'blog') {
+		$('#blog').click();
+	}
 
 });
 
