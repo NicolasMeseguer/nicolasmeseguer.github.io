@@ -1,63 +1,64 @@
-li > .active {
-	font-weight: 500;
+/* MOBILE's FIRST - Custom properties */
+/* This classes will be then modified for bigger screens */
+
+#hobbiesH4 {
+	text-align: center;
 }
 
+#hobbie1, #hobbie2, #hobbie3 {
+	text-align: center;
+	margin-top: 1em;
+}
+
+#nicolasmeseguerpicture {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* GENERAL CSS */
 #main-content {
 	margin-top: 20px;
 }
 
+li > .active {
+	font-weight: 500;
+}
+
+.trnsf-thin {
+	font-weight: 300;
+}
+
+.trnsf-italic {
+	font-style: italic;
+}
+
+.justify {
+	text-align: justify;
+  	text-justify: inter-word;
+}
+
+/* NICOLAS MESEGUER CONTACT INFO - Related*/
 .profilepicture {
 	max-height: 200px;
-
 	min-width: 150px;
 	min-height: 150px;
 }
 
-.honors-bullet{
+/* ABOUT ME - Related */
+.abme-honors-bullet{
 	font-size: 16px;
 	margin-left: 40px;
 }
 
-.force-margin-left {
-	margin-left: 10px !important;
-}
-
-.nombre-it {
-	font-weight: 300;
-}
-
-.tfx-it {
-	font-style: italic;
-}
-
-.custom-h2 {
-	font-size: 3.2em;
-	font-weight: 100;
-}
-
-.left-border {
+/* PUBLICATIONS - Related */
+.pub-block {
 	border-left: 2px #D9DDDC solid;
 	padding-left: 15px;
 }
 
-.clickable {
-	cursor: pointer;
-	transition: .3s;
-	box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
-}
-
-.clickable:hover {
-	box-shadow: 0px 20px 40px rgba(0,0,0,0.4);
-	transform: scale(1.03,1.03);
-}
-
-.all-border {
-	border: 2px #D9DDDC solid;
-	padding: 15px;
-}
-
-.pub-title {
-	font-style: italic;
+.pub-year-h2 {
+	font-size: 3.2em;
+	font-weight: 100;
 }
 
 .pub-authors {
@@ -72,11 +73,11 @@ li > .active {
 	font-weight: 100;
 }
 
-.justify {
-	text-align: justify;
-  	text-justify: inter-word;
+.pub-force-margin-left {
+	margin-left: 10px !important;
 }
 
+/* BLOG - Related */
 .blog-info {
 	font-weight: 100;
 	width: 100%;
@@ -106,4 +107,35 @@ li > .active {
 .blog-tags > .t-lime {
 	background-color: rgba(118, 185, 0, 0.8);
 	color: white;
+}
+
+.clickable {
+	border: 2px #D9DDDC solid;
+	padding: 15px;
+	cursor: pointer;
+	transition: .3s;
+	box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+}
+
+.clickable:hover {
+	box-shadow: 0px 20px 40px rgba(0,0,0,0.4);
+	transform: scale(1.03,1.03);
+}
+
+/* MEDIA QUERIES */
+/* BIGGER SCREENS */
+@media (min-width: 768px) {
+	#hobbiesH4 {
+		text-align: left;
+	}
+
+	#hobbie1, #hobbie2, #hobbie3 {
+		text-align: left;
+		margin-top: 0;
+	}
+
+	#nicolasmeseguerpicture {
+		margin-left: 0%;
+		margin-right: 0%;
+	}
 }
