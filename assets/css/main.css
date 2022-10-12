@@ -15,6 +15,10 @@
 	margin-right: auto;
 }
 
+.abme-honors-bullet{
+	font-size: 16px;
+}
+
 /* GENERAL CSS */
 #main-content {
 	margin-top: 20px;
@@ -42,12 +46,6 @@ li > .active {
 	max-height: 200px;
 	min-width: 150px;
 	min-height: 150px;
-}
-
-/* ABOUT ME - Related */
-.abme-honors-bullet{
-	font-size: 16px;
-	margin-left: 40px;
 }
 
 /* PUBLICATIONS - Related */
@@ -137,5 +135,9 @@ li > .active {
 	#nicolasmeseguerpicture {
 		margin-left: 0%;
 		margin-right: 0%;
+	}
+	
+	.abme-honors-bullet{
+		margin-left: 40px;
 	}
 }
