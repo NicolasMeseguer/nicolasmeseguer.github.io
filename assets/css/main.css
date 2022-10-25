@@ -10,11 +10,6 @@
 	margin-top: 1em;
 }
 
-#nicolasmeseguerpicture {
-	margin-left: auto;
-	margin-right: auto;
-}
-
 .abme-honors-bullet{
 	font-size: 16px;
 }
@@ -46,6 +41,8 @@ li > .active {
 	max-height: 200px;
 	min-width: 150px;
 	min-height: 150px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /* PUBLICATIONS - Related */
@@ -132,7 +129,7 @@ li > .active {
 		margin-top: 0;
 	}
 
-	#nicolasmeseguerpicture {
+	.profilepicture {
 		margin-left: 0%;
 		margin-right: 0%;
 	}
