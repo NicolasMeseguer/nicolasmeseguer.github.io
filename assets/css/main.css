@@ -1,6 +1,10 @@
 /* MOBILE's FIRST - Custom properties */
 /* This classes will be then modified for bigger screens */
 
+a {
+	text-decoration-thickness: 1px;
+}
+
 #hobbiesH4 {
 	text-align: center;
 }
