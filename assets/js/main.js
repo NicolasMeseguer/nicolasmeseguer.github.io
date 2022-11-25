@@ -4,7 +4,7 @@ $('#publicationsContent').hide();
 $('#experienceContent').hide();
 $('#conferencesContent').hide();
 $('#projectsContent').hide();
-$('#blogContent').hide();
+$('#tutorialsContent').hide();
 /* Template
 $('#nameContent').hide();
 */
@@ -68,7 +68,7 @@ $(document).ready(function(){
 	});
 
 	// Handle 'Blog' content
-	$('#blog').click(function(e) {
+	$('#tutorials').click(function(e) {
 
 		// If the div has already the class active, no need to reload the divs...
 		if(!$(e.target).hasClass('active')) {
@@ -80,7 +80,7 @@ $(document).ready(function(){
 			clearActiveDivs();
 
 			// Show current content
-			activateDiv('#blogContent');
+			activateDiv('#tutorialsContent');
 		}
 	});
 
@@ -156,9 +156,7 @@ $(document).ready(function(){
 
 	// Whenever you clic on a blog post, you should be redirected to that post' html
 	$('.clickable').click(function(e) {
-		var blogPostURL = window.location.origin + "/blog/" + $(e.currentTarget)[0].childNodes[1].innerText;
-		
-		window.location = blogPostURL;
+		window.open($(e.currentTarget)[0].childNodes[1].innerText, '_blank').focus();
 	});
 
 	// Copy the citation to the clipboard
@@ -173,8 +171,9 @@ $(document).ready(function(){
 
 	// Controls the URL; if it has '#blog'
 	// then trigger the 'Blog' clic
-	if (((window.location).href).substring(((window.location).href).lastIndexOf('#') + 1) == 'blog') {
-		$('#blog').click();
+	if (((window.location).href).substring(((window.location).href).lastIndexOf('#') + 1) == 'tutorials') {
+		$('#tutorials').click();
+		$('#tutorialsContent').focus();
 	}
 
 });

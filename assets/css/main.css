@@ -90,34 +90,42 @@ li > .active {
 	color: #717378;
 }
 
+.blog-tags {
+	text-align: right;
+}
+
 .blog-tags > .tag {
-	border-radius: 25px;
-	padding: 8px;
-	font-size: 15px;
+	border-radius: 100px;
+	padding: 4px;
+	font-size: 12px;
 	font-weight: 600;
 	box-shadow: 0px 3px 10px rgba(0,0,0,0.4);
+	color: white;
 }
 
 .blog-tags > .t-purple {
 	background-color: rgb(137, 70, 255, 0.8);
-	color: white;
 }
 
 .blog-tags > .t-lime {
 	background-color: rgba(118, 185, 0, 0.8);
-	color: white;
+}
+
+.blog-tags > .t-sky {
+	background-color: rgba(37, 197, 223, 0.8);
 }
 
 .clickable {
+	border-radius: 20px;
 	border: 2px #D9DDDC solid;
 	padding: 15px;
 	cursor: pointer;
 	transition: .3s;
-	box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+	box-shadow: 0px 3px 50px rgba(0,0,0,0.2);
 }
 
 .clickable:hover {
-	box-shadow: 0px 20px 40px rgba(0,0,0,0.4);
+	box-shadow: 0px 3px 50px rgba(0,0,0,0.3);
 	transform: scale(1.03,1.03);
 }
 
