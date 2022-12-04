@@ -8,12 +8,42 @@ $('#tutorialsContent').hide();
 /* Template
 $('#nameContent').hide();
 */
+$('#theme').hide();
+$('#lan').hide();
 
 $(document).ready(function(){
 
 	$.getJSON("https://api.countapi.xyz/hit/nicolasmeseguer.github.io/634c2142-b35d-430e-b51c-dad16880dd3a", function(response) {
 		$("#contadorVisitas").text(response.value);
 	});
+
+	// First time, check the theme
+	if(localStorage.getItem("theme") === null){
+		localStorage.theme = "light";
+		if (window.matchMedia('(prefers-color-scheme: dark)').matches)
+			localStorage.theme = "dark";
+	}
+	
+	// First time, check the locale
+	let userLang = navigator.language || navigator.userLanguage;
+	if(localStorage.getItem("lan") === null){
+		localStorage.lan = "en";
+		if (userLang.split('-')[0] == "es")
+			localStorage.lan = "es";
+	}
+
+	// Maybe first time or not, so load the localStorage value
+	if (localStorage.theme == "dark") {
+		// Handle menu
+		$('#theme').addClass("dark");
+		$('#theme').empty().append("<i class='fa-duotone fa-lightbulb-slash'></i>");
+	}
+	// Done because light is the one by default
+	if(localStorage.lan == "es") {
+		$('#lan img').attr("src","/assets/img/es_flag.webp");
+		$('#lan').addClass("es");
+	}
+	updateLanguage();
 
 	// Handle 'About Me' content
 	$('#aboutme').click(function(e) {
@@ -176,7 +206,66 @@ $(document).ready(function(){
 		$('#tutorialsContent').focus();
 	}
 
+	// Controls the options menu
+	$('#options-toggler').click(function(e) {
+		if(!$(e.target).hasClass('active')) {
+			$(e.target).addClass('active');
+			$('#theme').show("fast");
+			$('#lan').show("fast");
+		}
+		else {
+			$(e.target).removeClass('active');
+			$('#theme').hide("fast");
+			$('#lan').hide("fast");
+		}
+	})
+
+	// Animates the theme button + functionality
+	$('#theme').click(function(e) {
+		if(!$(e.target).hasClass('dark')){
+			$(e.target).addClass('dark');
+
+			$('#theme').empty().append("<i class='fa-duotone fa-lightbulb-slash'></i>");
+
+			localStorage.theme = "dark"
+		}
+		else {
+			$(e.target).removeClass('dark');
+
+			$('#theme').empty().append("<i class='fa-duotone fa-lightbulb'></i>");
+
+			localStorage.theme = "light"
+		}
+	})
+
+	// Animates the lan button + functionality
+	$('#lan').click(function(e) {
+		if(!$(e.target).hasClass('es')){
+			$(e.target).addClass('es');
+
+			$('#lan img').attr("src","/assets/img/es_flag.webp");
+
+			localStorage.lan = "es"
+		}
+		else {
+			$(e.target).removeClass('es');
+
+			$('#lan img').attr("src","/assets/img/en_flag.webp");
+
+			localStorage.lan = "en"
+		}
+
+		updateLanguage();
+	})
+
 });
+
+function updateLanguage() {
+	let lang = localStorage.lan;
+	$(".language *").each(function(){
+		$(this).html( $(this).data(lang) );
+	});
+}
 
 function clearActiveLinks() {
 	$('#navbarList .nav-item .nav-link').each(function() {

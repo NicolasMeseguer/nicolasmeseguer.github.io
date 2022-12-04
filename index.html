@@ -41,7 +41,13 @@
 	</script>
 
 	<body>
-		
+
+		<!-- Bottom rounded button -->
+		<div class="options-button" id="options-toggler"><i class="fa-light fa-arrows-repeat"></i></div>
+		<div class="options-button" id="theme"><i class="fa-duotone fa-lightbulb"></i></div>
+		<div class="options-button" id="lan"><img class="lang-flag" src="/assets/img/en_flag.webp" alt="Flag indicating the english language is selected"></div>
+
+
 		<!-- Navbar  -->
 		<nav class="navbar navbar-expand-md navbar-light bg-light flex-md-nowrap flex-wrap">
 			<div class="container justify-content-center">
@@ -49,31 +55,31 @@
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="navbar-collapse collapse flex-grow-1 justify-content-center" id="collapsingNavbar3">
-					<ul class="navbar-nav mx-auto" id="navbarList">
+					<ul class="navbar-nav mx-auto language" id="navbarList">
 						<li class="nav-item">
-							<a class="nav-link active" id="aboutme" href="#">About Me</a>
+							<a class="nav-link active" id="aboutme" href="#" data-es="Sobre Mi" data-en="About Me"></a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" id="education" href="#">Education</a>
+							<a class="nav-link" id="education" href="#" data-es="Educación" data-en="Education"></a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" id="publications" href="#">Publications</a>
+							<a class="nav-link" id="publications" href="#" data-es="Publicaciones" data-en="Publications"></a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" id="tutorials" href="#">Tutorials</a>
+							<a class="nav-link" id="tutorials" href="#" data-es="Tutoriales" data-en="Tutorials"></a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link d-none" id="projects" href="#">Side Projects</a>
+							<a class="nav-link d-none" id="projects" href="#" data-es="Proyectos" data-en="Side Projects"></a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link d-none" id="conferences" href="#">Conferences</a>
+							<a class="nav-link d-none" id="conferences" href="#" data-es="Conferencias" data-en="Conferences"></a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link d-none" id="experience" href="#">Experience</a>
+							<a class="nav-link d-none" id="experience" href="#" data-es="Experiencia" data-en="Experience"></a>
 						</li>
 						<!-- TEMPLATE
 						<li class="nav-item">
-							<a class="nav-link" id="name" href="#">Name</a>
+							<a class="nav-link" id="name" href="#" data-es="name-es" data-en="name-en"></a>
 						</li>
 						-->
 					</ul>
@@ -85,10 +91,10 @@
 			<div class="row content">
 				
 				<!-- Nicolas Meseguer profile and contact info -->
-				<div class="col-md-3">
+				<div class="col-md-3 language">
 					<div class="row mb-3">
 						<div class="col">
-							<img src="assets/img/NicolasMeseguer.jpg" class="rounded me-auto d-block img-fluid profilepicture" alt="Nicolas Meseguer profile picture">
+							<img src="assets/img/NicolasMeseguer.webp" class="rounded me-auto d-block img-fluid profilepicture" alt="Nicolas Meseguer profile picture">
 						</div>
 					</div>
 
@@ -96,7 +102,7 @@
 
 					<div class="d-none" id="contadorVisitas"></div>
 
-					<p class="text-secondary mb-4">Ph.D. Computer Architecture Student at University of Murcia.</p>
+					<p class="text-secondary mb-4" data-es="Estudiante de doctorado en Arquitectura de Computadores en la Universidad de Murcia." data-en="Ph.D. Computer Architecture Student at University of Murcia."></p>
 					
 					<div class="row mb-2">
 						<div class="col-1">
@@ -104,8 +110,8 @@
 						</div>
 
 						<div class="col-10">
-							Greater Murcia Metropolitan Area <br/>
-							Murcia, Spain
+							<span data-es="Área Metropolitana" data-en="Greater Murcia Metropolitan Area"></span> <br/>
+							Murcia, <span data-es="España" data-en="Spain"></span>
 						</div>
 					</div>
 
@@ -233,7 +239,7 @@
 							<div class="container">
 								<div class="row mt-3">
 									<div class="thumbnail col-md-3">
-										<img class="rounded mx-auto d-block img-fluid" src="/assets/img/NicolasMeseguerProgramming.png" alt="Programming and Math">
+										<img class="rounded mx-auto d-block img-fluid" src="/assets/img/NicolasMeseguerProgramming.webp" alt="Programming and Math">
 									</div>
 									<div class="col-md-9" id="hobbie1">
 										<b>
@@ -249,7 +255,7 @@
 
 								<div class="row mt-5">
 									<div class="thumbnail col-md-3">
-										<img class="rounded mx-auto d-block img-fluid" src="/assets/img/NicolasMeseguerTailandia.png" alt="Travelling">
+										<img class="rounded mx-auto d-block img-fluid" src="/assets/img/NicolasMeseguerTailandia.webp" alt="Travelling">
 									</div>
 									<div class="col-md-9" id="hobbie2">
 										<b>
@@ -265,7 +271,7 @@
 								
 								<div class="row mt-5">
 									<div class="thumbnail col-md-3">
-										<img class="rounded mx-auto d-block img-fluid" src="/assets/img/NicolasMeseguerYoutube.png" alt="Content Creator on YouTube">
+										<img class="rounded mx-auto d-block img-fluid" src="/assets/img/NicolasMeseguerYouTube.webp" alt="Content Creator on YouTube">
 									</div>
 									<div class="col-md-9" id="hobbie3">
 										<b>

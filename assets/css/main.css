@@ -76,6 +76,82 @@ li > .active {
 	margin-left: 10px !important;
 }
 
+/* OPTION BUTTON */
+.options-button {
+    position: fixed;
+	
+    height: 50px;
+    width: 50px;
+	cursor: pointer;
+
+	background-color: white;
+	border: 1px solid black;
+    border-radius: 100%;
+	
+	bottom: 25px;
+	right: 25px;
+
+	display: inline-block;
+
+	font-size: 1.2em;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.options-button i, img {
+	display: inline-block;
+	vertical-align: middle;
+	z-index: -999;
+}
+
+#options-toggler {
+	box-shadow: 0px 3px 50px rgba(0,0,0,0.2);
+
+	padding-top: 2px;
+
+	transition: .2s;
+}
+
+#options-toggler:hover {
+	box-shadow: 0px 3px 50px rgba(0,0,0,0.3);
+	transform: scale(1.09,1.09);
+}
+
+#theme {
+	height: 40px;
+    width: 40px;
+
+	bottom: 85px !important;
+	right: 30px !important;
+
+	font-size: 1em;
+
+	-webkit-transition: background-color .5s; /* For Safari 3.0 to 6.0 */
+    transition: background-color .5s; /* For modern browsers */
+}
+
+#lan {
+	height: 40px;
+    width: 40px;
+
+	bottom: 130px;
+	right: 30px;
+
+	font-size: 1em;
+
+	-webkit-transition: background-color .5s; /* For Safari 3.0 to 6.0 */
+    transition: background-color .5s; /* For modern browsers */
+}
+
+#theme:hover, #lan:hover {
+	background-color: #d3d3d3;
+}
+
+.lang-flag {
+	height: 20px;
+    width: 30px;
+}
+
 /* BLOG - Related */
 .blog-info {
 	font-weight: 100;
@@ -132,6 +208,7 @@ li > .active {
 /* MEDIA QUERIES */
 /* BIGGER SCREENS */
 @media (min-width: 768px) {
+
 	#hobbiesH4 {
 		text-align: left;
 	}
@@ -152,17 +229,28 @@ li > .active {
 }
 
 /* Light mode */
-@media (prefers-color-scheme: light) {
-    body {
-        background-color: white;
-        color: black;
-    }
+.l-mode {
+	background-color: white;
+	color: #121212;
+}
+.transition-l-mode {
+	-webkit-transition: all 1s ease; /* For Safari 3.0 to 6.0 */
+    transition: all 1s ease; /* For modern browsers */
+
+	background-color: white;
+	color: #121212;
 }
 
 /* Dark mode */
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: white;
-        color: black;
-    }
+.d-mode {
+	background: #121212;
+	color: white;
+}
+
+.transition-d-mode {
+	-webkit-transition: all 1s ease; /* For Safari 3.0 to 6.0 */
+    transition: all 1s ease; /* For modern browsers */
+
+	background: #121212;
+	color: white;
 }
