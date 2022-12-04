@@ -307,7 +307,7 @@
 
 										<br />
 										<p class="mt-2 d-inline justify"
-											data-es="Decidí viajar a Alemania para hacer unas prácticas el mismo año que terminé el grado superior (HNC). Desde entonces, me he propuesto ir a un lugar nuevo al menos una vez al año. He recorrido Italia, conducido en moto a través de Tailandia (sin embargo, la pandemia me lo ha puesto bastante dificil estos últimos años)."
+											data-es="Decidí viajar a Alemania para hacer unas prácticas el mismo año que terminé el grado superior. Desde entonces, me he propuesto ir a un lugar nuevo al menos una vez al año. He recorrido Italia, conducido en moto a través de Tailandia (sin embargo, la pandemia me lo ha puesto bastante dificil estos últimos años)."
 											data-en="I opted to move to Germany for an internship the same year I finished my undergraduate degree (HNC). Since then, I've made it a goal to go to a new location at least once a year. I've been across Italy and Thailand since then (although the pandemic has hampered my progress quite a bit this last years).">
 										</p>
 
@@ -347,78 +347,200 @@
 				<!-- Education -->
 				<div class="col-md-8 offset-md-1 mb-5" id="educationContent">
 					<div class="container">
-						<div class="row mt-2">
-							<h2>Ph.D. in Computer Architecture</h2>
-							<div class="trnsf-thin">(University of Murcia, 2022-2026)</div>
+						<div class="row mt-2 language">
+							<h2 
+								data-es="Doctorado en Arquitectura de Computadores"
+								data-en="Ph.D. in Computer Architecture"></h2>
+							<div class="trnsf-thin" 
+								data-es="(Universidad de Murcia, 2022-2026)" 
+								data-en="(University of Murcia, 2022-2026)"></div>
 
-							<p class="mt-1 justify">
+							<p class="mt-1 justify"
+								data-es="
+								El diseño del sistema de memoria es un componente clave de cualquier arquitectura, y mucho más crucial en las arquitecturas heterogéneas, que están surgiendo como resultado de la ralentización de la Ley de Moore.
+
+								Aunque las jerarquías de memoria en las arquitecturas de propósito general se han explorado ampliamente a lo largo de los años, los aceleradores de dominio específico tienen restricciones que introducen variaciones en algunas características esenciales. Además, a medida que la capacidad de cálculo de estas arquitecturas heterogéneas crece, también lo hace la necesidad de poder recuperar datos con los que operar, lo que aumenta la presión sobre el diseño del sistema de memoria.
+
+								El objetivo general de este trabajo es sugerir enfoques para abordar dos preocupaciones trascendentales en el diseño del sistema de memoria de un procesador heterogéneo. Por un lado, organizaciones novedosas para las estructuras de memoria empleadas por los núcleos (considerando los aceleradores de deep learning en este caso), a través de las cuales se podrá responder a la exigencia de un ancho de banda cada vez mayor. Por otro lado, investigaremos alternativas a los conceptos actuales de memoria virtual para compartir de forma más eficiente el mismo espacio de memoria entre los núcleos de propósito general y los aceleradores.
+								"
+
+								data-en="
 								The design of the memory system is a key component of any computer architecture, and it is much more crucial in the heterogeneous architectures that are emerging as a result of Moore's Law slowing.
 
 								Although memory hierarchies in general-purpose architectures have been extensively explored over the years, domain-specific accelerators have restrictions that introduces variances in some essential features. Furthermore, as the computational capability of these heterogeneous architectures grows, so does the requirement to be able to retrieve data with which to operate, increasing the pressure on the design of the memory system.
 
 								The overarching goal of this work is to suggest approaches for addressing two transcendental concerns in the design of a heterogeneous processor's memory system. On the one hand, novel organizations for the memory structures employed by cores (considering deep learning accelerators in this case), through which it will be possible to respond to the requirement for ever-increasing bandwidth. On the other hand, we will investigate alternatives to present virtual memory concepts in order to more efficiently share the same memory space across general purpose cores and accelerators.
+								">
+								
 							</p>
 
 							<div class="trnsf-thin">
-								Dissertation: <span class="trnsf-italic">TBD (late~2026).</span>
+								<span 
+									data-es="Tésis:"
+									data-en="Dissertation:">
+								</span>
+								<span class="trnsf-italic"
+									data-es="Por determinar (finales~2026)."
+									data-en="TBD (late~2026).">
+								</span>
 							</div>
 
 						</div>
 
-						<div class="row mt-3">
-							<h2>M.S. in High Performance Architectures and Supercomputing</h2>
-							<div class="trnsf-thin">(University of Murcia, 2021-2022) 9,24 - 60 ECTS</div>
+						<div class="row mt-3 language">
+							<h2 
+								data-es="Máster en Arquitecturas de Altas Prestaciones y Supercomputación"
+								data-en="M.S. in High Performance Architectures and Supercomputing"></h2>
+							<div class="trnsf-thin"
+								data-es="(Universidad de Murcia, 2021-2022) 9,24 - 60 ECTS"
+								data-en="(University of Murcia, 2021-2022) 9,24 - 60 ECTS">
+							</div>
 
-							<p class="mt-1 justify">
+							<p class="mt-1 justify"
+								data-es="
+								Diseño de arquitecturas multinúcleo de alto rendimiento, incluyendo la microarquitectura de cada uno de los núcleos de procesamiento, las cachés y la red de interconexión.
+								Comprender los mecanismos a través de los cuales se puede lograr una comunicación eficiente entre los núcleos (el protocolo de coherencia de la caché).
+								Evaluar el impacto de las diferentes técnicas arquitectónicas en el rendimiento y el consumo de energía de las arquitecturas multinúcleo de alto rendimiento.
+								Estándares de programación paralela: paradigmas de memoria compartida (OpenMP) e interfaz de paso de mensajes (MPI) + paradigmas híbridos (como MPI+OpenMP y OpenMP+CUDA).
+								Nociones de programación paralela, algoritmos y bibliotecas matriciales eficientes en sistemas de alto rendimiento (BLAS, Intel MKL, cuBLAS, ScaLAPACK).
+								Administración de sistemas de alto rendimiento (almacenamiento RAID, reglas de cortafuegos, protocolos de red, gestor de módulos, sistema de colas, arranque en red).
+								"
+
+								data-en="
 								Design high-performance multi-core architectures, including the microarchitecture of each of the processing cores, the caches and the interconnection network.
 								Understand the mechanisms through which efficient communication between cores can be achieved (the cache coherence protocol).
 								Assess the impact of different architectural techniques on the performance and power consumption of high-performance multi-core architectures.
 								Parallel programming standards: shared memory paradigms (OpenMP) and message passing interface (MPI) + hybrid paradigms (such as MPI+OpenMP and OpenMP+CUDA).
 								Notions of parallel programming and efficient matrix algorithms and libraries in high-performance systems (BLAS, Intel MKL, cuBLAS, ScaLAPACK).
-								High performance system administration (RAID storage, firewall rules, network protocols, module manager, queuing system, pxe boot).
+								High performance system administration (RAID storage, firewall rules, network protocols, module manager, queuing system, network boot).
+								">
+								
 							</p>
 
 							<div class="trnsf-thin">
-								Thesis: <span class="trnsf-italic"><a href="./assets/documents/dissertations/NICOLASMESEGUER_CPU-PCGCN_efficient_processing_of_graph_convolutional_networks_on_CPU_architectures.pdf" class="link-dark" target="_blank">CPU-PCGCN, efficient processing of graph convolutional networks on CPU architectures</a>.</span>
+								<span
+									data-es="TFM:"
+									data-en="Thesis:">
+								</span>
+								<span class="trnsf-italic">
+									<a href="./assets/documents/dissertations/NICOLASMESEGUER_CPU-PCGCN_efficient_processing_of_graph_convolutional_networks_on_CPU_architectures.pdf" class="link-dark" target="_blank"
+									data-es="CPU-PCGCN, procesamiento eficiente de redes convolucionales grafos en arquitecturas CPU."
+									data-en="CPU-PCGCN, efficient processing of graph convolutional networks on CPU architectures.">
+								</a>
+								</span>
 							</div>
 							<div class="trnsf-thin">
-								[find the repository  <a href="https://github.com/NicolasMeseguer/pcgcn" class="link-dark" target="_blank">here</a>]
+								<span
+									data-es="[encuentra el repositorio"
+									data-en="[find the repository">
+								</span>
+								<a href="https://github.com/NicolasMeseguer/pcgcn" class="link-dark" target="_blank" 
+									data-es="aquí]"
+									data-en="here]">
+								</a>
 							</div>
 
 						</div>
 
-						<div class="row mt-3">
-							<h2>Intern Student, Machine Learning and Deep Learning</h2>
-							<div class="trnsf-thin">(Catholic University of Murcia, 2019-2020) - 12 ECTS</div>
+						<div class="row mt-3 language">
+							<h2 
+								data-es="Alumno Interno, Machine Learning y Deep Learning"
+								data-en="Intern Student, Machine Learning and Deep Learning">
+							</h2>
+							<div class="trnsf-thin" 
+								data-es="(Univerisdad Católica de Murcia, 2019-2020) - 12 ECTS" 
+								data-en="(Catholic University of Murcia, 2019-2020) - 12 ECTS">
+							</div>
 
-							<p class="mt-1 justify">
+							<p class="mt-1 justify" 
+								data-es="
+								Introducción a Machine Learning (ML) y a las nociones que sustentan el cálculo de diferentes modelos de Deep Neural Networks (DNNs), como MLPs, CNNs o RNNs.
+								Durante mi estancia de prácticas, desarrollé una red neuronal completamente conectada (FC) y una convolucional (CNN) en C, mejorando la eficiencia de la caché (memoria dinámica, punteros, registros de memoria) y las operaciones matriciales para acelerar el cálculo. 
+								Esta aplicación se distribuye abiertamente a la comunidad científica; es totalmente modular y fácil de usar.
+								"
+
+								data-en="
 								Introduction to Machine Learning (ML) and the notions underpinning the computation of different Deep Neural Networks (DNNs) models, such as MLPs, CNNs, or RNNs.
-								During my time as an intern student, I developed a convolutional neural network (CNN) in C, improving cache efficency (dynamic memory, pointers, memory registers) and matrix operations to speed up the calculation. 
-								<a href="https://github.com/NicolasMeseguer/DNN" target="_blank" class="link-dark">This application</a> is openly distributed to the scientific commmunity; it is totally modular and user-friendly.
-							</p>
-
-						</div>
-
-						<div class="row mt-3">
-							<h2> (Hons) B.S. in Computer Engineering</h2>
-							<div class="trnsf-thin">(Catholic University of Murcia, 2018-2021) 9,3 - 240 ECTS</div>
-
-							<p class="mt-1 justify">
-								Data structures (stacks, queues, lists, graphs), algorithms (sorting, hashing, backtracking), databases (relational and no relational), parallel programming (OMP and CUDA), computer architecture (MIPS, Von Neumann model, segmentation, multicycle and monocycle), calculus and linear algebra, networks, operating systems and computer security (CISCO course), agile methodologies and software engineering, advanced visual programming, smart systems (Python), native mobile apps and progressive web apps, etc.
+								During my time as an intern student, I developed a fully connected (FC) and a convolutional neural network (CNN) in C, improving cache efficency (dynamic memory, pointers, memory registers) and matrix operations to speed up the calculation. 
+								This application is openly distributed to the scientific commmunity; it is totally modular and user-friendly.
+								">
 							</p>
 
 							<div class="trnsf-thin">
-								Thesis: <span class="trnsf-italic"><a href="./assets/documents/dissertations/NICOLASMESEGUER_Implementation_and_evaluation_of_the_DLRM_model_in_an_ASIC_accelerator_simulated_by_STONNE.pdf" class="link-dark" target="_blank">Implementation and evaluation of the DLRM model in an ASIC accelerator simulated by STONNE</a>.</span>
+								<span
+									data-es="[encuentra la aplicación"
+									data-en="[find the application">
+								</span>
+								<a href="https://github.com/NicolasMeseguer/DNN" class="link-dark" target="_blank" 
+									data-es="aquí]"
+									data-en="here]">
+								</a>
 							</div>
 
 						</div>
 
-						<div class="row mt-3">
-							<h2>HNC Web App Developer</h2>
+						<div class="row mt-3 language">
+							<h2 
+								data-es="(Honorífico) Grado en Ingeniería Informática"
+								data-en="(Hons) B.S. in Computer Engineering">
+							</h2>
+							<div class="trnsf-thin" 
+								data-es="(Univerisdad Católica de Murcia, 2018-2021) 9,3 - 240 ECTS" 
+								data-en="(Catholic University of Murcia, 2018-2021) 9,3 - 240 ECTS">
+							</div>
+
+							<p class="mt-1 justify"
+								data-es="
+								Estructuras de datos (pilas, colas, listas, grafos), algoritmos (ordenación, hashing, backtracking), 
+								bases de datos (relacionales y no relacionales), programación paralela (OMP y CUDA), 
+								arquitectura de ordenadores (MIPS, modelo Von Neumann, segmentación, multiciclo y monociclo), 
+								cálculo y álgebra lineal, redes, sistemas operativos y seguridad informática (curso CISCO), 
+								metodologías ágiles e ingeniería del software, programación visual avanzada, sistemas inteligentes (Python), 
+								apps móviles nativas y apps web progresivas, etc."
+
+								data-en="
+								Data structures (stacks, queues, lists, graphs), algorithms (sorting, hashing, backtracking), 
+								databases (relational and no relational), parallel programming (OMP and CUDA), 
+								computer architecture (MIPS, Von Neumann model, segmentation, multicycle and monocycle), 
+								calculus and linear algebra, networks, operating systems and computer security (CISCO course), 
+								agile methodologies and software engineering, advanced visual programming, smart systems (Python), 
+								native mobile apps and progressive web apps, etc.">
+								
+							</p>
+
+							<div class="trnsf-thin">
+								<span
+									data-es="TFG:"
+									data-en="Thesis:">
+								</span>
+								<span class="trnsf-italic">
+									<a href="./assets/documents/dissertations/NICOLASMESEGUER_Implementation_and_evaluation_of_the_DLRM_model_in_an_ASIC_accelerator_simulated_by_STONNE.pdf" class="link-dark" target="_blank"
+									data-es="Implementación y evaluación del modelo DLRM en un acelerador ASIC simulado por STONNE"
+									data-en="Implementation and evaluation of the DLRM model in an ASIC accelerator simulated by STONNE.">
+								</a>
+								</span>
+							</div>
+
+						</div>
+
+						<div class="row mt-3 language">
+							<h2 
+								data-es="Grado Superior en Desarrollo de Aplicaciones Web"
+								data-en="HNC Web App Developer">
+							</h2>
 							<div class="trnsf-thin">(IES José Planes, 2016-2018) 8,8 - 120 ECTS </div>
 
-							<p class="mt-1 justify">
-								Developing, implementing and maintaining web applications (MVC approach), irrespective of the model used and using specific technologies (Laravel, Symfony, Java, React.js or Node.js), guaranteeing secure access to data (MySQL, XML or Ajax) and complying with the accessibility, usability and quality criteria (Doctrine2, Ruby, SASS, Compass) required by established standards.
+							<p class="mt-1 justify"
+
+								data-es="Desarrollar, implementar y mantener aplicaciones web (enfoque MVC), 
+								independientemente del modelo utilizado y utilizando tecnologías específicas (Laravel, Symfony, Java, React.js o Node.js), 
+								garantizando el acceso seguro a los datos (MySQL, XML o Ajax) y cumpliendo los criterios de accesibilidad, 
+								usabilidad y calidad (Doctrine2, Ruby, SASS, Compass) exigidos por los estándares establecidos."
+
+								data-en="Developing, implementing and maintaining web applications (MVC approach), 
+								irrespective of the model used and using specific technologies (Laravel, Symfony, Java, React.js or Node.js), 
+								guaranteeing secure access to data (MySQL, XML or Ajax) and complying with the accessibility, 
+								usability and quality criteria (Doctrine2, Ruby, SASS, Compass) required by established standards.">
 							</p>
 
 						</div>
@@ -497,7 +619,7 @@
 							</div>
 
 							<div class="blog-tags mt-1">
-								<span class="tag t-sky">#mgpusim</span> <span class="tag t-sky">#tracing</span> <span class="tag t-sky">#akita</span>
+								<span class="tag t-sky">#mgpusim</span> <span class="tag t-sky">#akita</span> <span class="tag t-sky">#tracing</span>
 							</div>
 						</div>
 
@@ -519,7 +641,7 @@
 							</div>
 
 							<div class="blog-tags mt-1">
-								<span class="tag t-sky">#mgpusim</span> <span class="tag t-sky">#daisen</span> <span class="tag t-sky">#akita</span>
+								<span class="tag t-sky">#mgpusim</span> <span class="tag t-sky">#akita</span> <span class="tag t-sky">#daisen</span>
 							</div>
 						</div>
 						

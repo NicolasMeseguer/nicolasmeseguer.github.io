@@ -208,13 +208,13 @@ $(document).ready(function(){
 
 	// Controls the options menu
 	$('#options-toggler').click(function(e) {
-		if(!$(e.target).hasClass('active')) {
-			$(e.target).addClass('active');
+		if(!$(e.currentTarget).hasClass('active')) {
+			$(e.currentTarget).addClass('active');
 			$('#theme').show("fast");
 			$('#lan').show("fast");
 		}
 		else {
-			$(e.target).removeClass('active');
+			$(e.currentTarget).removeClass('active');
 			$('#theme').hide("fast");
 			$('#lan').hide("fast");
 		}
@@ -222,15 +222,15 @@ $(document).ready(function(){
 
 	// Animates the theme button + functionality
 	$('#theme').click(function(e) {
-		if(!$(e.target).hasClass('dark')){
-			$(e.target).addClass('dark');
+		if(!$(e.currentTarget).hasClass('dark')){
+			$(e.currentTarget).addClass('dark');
 
 			$('#theme').empty().append("<i class='fa-duotone fa-lightbulb-slash'></i>");
 
 			localStorage.theme = "dark"
 		}
 		else {
-			$(e.target).removeClass('dark');
+			$(e.currentTarget).removeClass('dark');
 
 			$('#theme').empty().append("<i class='fa-duotone fa-lightbulb'></i>");
 
@@ -240,15 +240,15 @@ $(document).ready(function(){
 
 	// Animates the lan button + functionality
 	$('#lan').click(function(e) {
-		if(!$(e.target).hasClass('es')){
-			$(e.target).addClass('es');
+		if(!$(e.currentTarget).hasClass('es')){
+			$(e.currentTarget).addClass('es');
 
 			$('#lan img').attr("src","/assets/img/es_flag.webp");
 
 			localStorage.lan = "es"
 		}
 		else {
-			$(e.target).removeClass('es');
+			$(e.currentTarget).removeClass('es');
 
 			$('#lan img').attr("src","/assets/img/en_flag.webp");
 
