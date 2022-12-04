@@ -96,18 +96,17 @@ li > .active {
 	font-size: 1.2em;
 	vertical-align: middle;
 	text-align: center;
+
+	padding-top: .35em;
 }
 
 .options-button i, img {
-	display: inline-block;
-	vertical-align: middle;
+	margin: auto;
 	z-index: -999;
 }
 
 #options-toggler {
 	box-shadow: 0px 3px 50px rgba(0,0,0,0.2);
-
-	padding-top: 2px;
 
 	transition: .2s;
 }
@@ -148,8 +147,9 @@ li > .active {
 }
 
 .lang-flag {
-	height: 20px;
-    width: 30px;
+	height: 15px;
+    width: 22.5px;
+	vertical-align:	0px;
 }
 
 /* BLOG - Related */
