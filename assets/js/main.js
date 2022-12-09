@@ -33,9 +33,19 @@ $(document).ready(function(){
 	}
 
 	// Maybe first time or not, so load the localStorage value
+	$('<link>').appendTo('head').attr({
+		type: 'text/css', 
+		rel: 'stylesheet',
+		href: 'assets/css/light.css'
+	});
 	if (localStorage.theme == "dark") {
 		// Handle menu
-		$('#theme').addClass("dark");
+		$("link[href='assets/css/light.css']").remove();
+		$('<link>').appendTo('head').attr({
+			type: 'text/css', 
+			rel: 'stylesheet',
+			href: 'assets/css/dark.css'
+		});
 		$('#theme').empty().append("<i class='fa-duotone fa-lightbulb-slash'></i>");
 	}
 	// Done because light is the one by default
@@ -222,19 +232,31 @@ $(document).ready(function(){
 
 	// Animates the theme button + functionality
 	$('#theme').click(function(e) {
-		if(!$(e.currentTarget).hasClass('dark')){
-			$(e.currentTarget).addClass('dark');
+		if(localStorage.theme != "dark"){
 
 			$('#theme').empty().append("<i class='fa-duotone fa-lightbulb-slash'></i>");
 
 			localStorage.theme = "dark"
+			
+			$("link[href='assets/css/light.css']").remove();
+			$('<link>').appendTo('head').attr({
+				type: 'text/css', 
+				rel: 'stylesheet',
+				href: 'assets/css/dark.css'
+			});
 		}
 		else {
-			$(e.currentTarget).removeClass('dark');
 
 			$('#theme').empty().append("<i class='fa-duotone fa-lightbulb'></i>");
 
 			localStorage.theme = "light"
+			
+			$("link[href='assets/css/dark.css']").remove();
+			$('<link>').appendTo('head').attr({
+				type: 'text/css', 
+				rel: 'stylesheet',
+				href: 'assets/css/light.css'
+			});
 		}
 	})
 

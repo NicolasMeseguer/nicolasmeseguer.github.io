@@ -1,0 +1,54 @@
+:root {
+	--t-color: #D8DEE9;
+	--h-color: #ffff;
+
+	--bg-color: #383838;
+	--nv-color: #121212;
+}
+
+body {
+	background-color: var(--bg-color);
+	color: var(--t-color)
+}
+
+h1, h2, h3, h4, b {
+	color: var(--h-color) !important;
+}
+
+#top-nav {
+	background-color: var(--nv-color) !important;
+}
+
+.nav-link {
+	color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.nav-link:hover{
+	color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.link-dark {
+	color: var(--h-color) !important;
+}
+
+.link-dark:hover {
+	color: #DBDBDB !important;
+}
+
+/* OPTION BUTTON */
+.options-button {
+	background-color: var(--bs-gray-700);
+	border: 1px solid #fff;
+}
+
+#options-toggler {
+	box-shadow: 0px 3px 50px rgba(0,0,0,0.2);
+}
+
+#options-toggler:hover {
+	box-shadow: 0px 3px 50px rgba(0,0,0,0.3);
+}
+
+#theme:hover, #lan:hover {
+	background-color: var(--bg-color);
+}

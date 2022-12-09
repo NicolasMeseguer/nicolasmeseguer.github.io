@@ -1,0 +1,62 @@
+:root {
+	--t-color: #000;
+
+	--bg-color: #fff;
+}
+
+body {
+	background-color: var(--bg-color);
+	color: var(--t-color);
+}
+
+h1, h2, h3, h4, b {
+	color: var(--t-color) !important;
+}
+
+#top-nav {
+	background-color:rgb(248, 249, 250) !important;
+}
+
+.nav-link {
+	color: rgba(0, 0, 0, 0.9) !important;
+}
+
+.nav-link:hover{
+	color: rgba(0, 0, 0, 0.7) !important;
+}
+
+.t-secondary { 
+	color: rgb(108,117,125);
+}
+
+.link-dark {
+	color: #212529 !important;
+}
+
+.link-dark:hover {
+	color: #1c1e20 !important;
+}
+
+/* OPTION BUTTON */
+.options-button {
+	background-color: var(--bg-color);
+	border: 1px solid #000;
+}
+
+#options-toggler {
+	box-shadow: 0px 3px 50px rgba(0,0,0,0.2);
+}
+
+#options-toggler:hover {
+	box-shadow: 0px 3px 50px rgba(0,0,0,0.3);
+}
+
+#theme:hover, #lan:hover {
+	background-color: #d3d3d3;
+}
+
+/* BLOG - Related */
+
+.blog-short {
+	color: #717378;
+}
