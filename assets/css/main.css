@@ -40,6 +40,10 @@ li > .active {
   	text-justify: inter-word;
 }
 
+.lucida-console {
+	font-family: 'Lucida Console', monospace;
+}
+
 /* NICOLAS MESEGUER CONTACT INFO - Related*/
 .profilepicture {
 	max-height: 200px;

@@ -31,7 +31,7 @@ h1, h2, h3, h4, b {
 	color: var(--h-color) !important;
 }
 
-.link-dark:hover {
+.link-dark:hover, .link-dark:focus {
 	color: #DBDBDB !important;
 }
 

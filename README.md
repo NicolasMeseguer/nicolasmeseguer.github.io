@@ -5,7 +5,7 @@ You can find the LIVE Website [here](https://nicolasmeseguer.github.io).
 
 This template has been made from scratch taking in consideration some details from Beautiful Jekyll templates.
 
-🙋‍♂️ Let's connect [n.mesegueriborra@um.es](mailto:n.mesegueriborra@um.es).
+Reach me @ [n.mesegueriborra@um.es](mailto:n.mesegueriborra@um.es).
 
 License
 -------
