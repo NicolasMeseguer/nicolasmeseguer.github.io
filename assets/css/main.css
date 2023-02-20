@@ -46,11 +46,20 @@ li > .active {
 
 /* NICOLAS MESEGUER CONTACT INFO - Related*/
 .profilepicture {
-	max-height: 200px;
+	max-height: 300px;
 	min-width: 150px;
 	min-height: 150px;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.fseneca {
+	max-width: 50%; 
+	height: auto;
+}
+
+.fseneca:hover {
+	transform: scale(1.05,1.05);
 }
 
 /* PUBLICATIONS - Related */
