@@ -125,8 +125,8 @@ $(document).ready(function(){
 		}
 	});
 
-	// Handle 'Teaching' content
-	$('#teaching').click(function(e) {
+	// Handle 'Academic' content
+	$('#academic').click(function(e) {
 
 		// If the div has already the class active, no need to reload the divs...
 		if(!$(e.target).hasClass('active')) {
@@ -138,7 +138,7 @@ $(document).ready(function(){
 			clearActiveDivs();
 
 			// Show current content
-			activateDiv('#teachingContent');
+			activateDiv('#academicContent');
 		}
 	});
 

@@ -89,6 +89,29 @@ li > .active {
 	margin-left: 10px !important;
 }
 
+/* ACADEMIC - Related */
+.academic-year-h2 {
+	font-size: 3.2em;
+	font-weight: 100;
+}
+
+.academic-block {
+	border-left: 2px #22517d solid;
+	padding-left: 15px;
+}
+
+.academic-name {
+	color: #22517d;
+}
+
+.academic-rol {
+	font-weight: 400;
+}
+
+.academic-year {
+	font-weight: 100;
+}
+
 /* OPTION BUTTON */
 .options-button {
     position: fixed;
