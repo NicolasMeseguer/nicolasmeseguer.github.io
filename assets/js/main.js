@@ -5,7 +5,7 @@ $('#experienceContent').hide();
 $('#conferencesContent').hide();
 $('#projectsContent').hide();
 $('#tutorialsContent').hide();
-$('#teachingContent').hide();
+$('#academicContent').hide();
 /* Template
 $('#nameContent').hide();
 */
