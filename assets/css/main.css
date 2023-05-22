@@ -271,9 +271,11 @@ li > .active {
 	transition: 0.4s;
 }
 
-.particular-img {
-	float: left;
-	padding: 0em 1em 1em 0em;
+.profilepicture-particular {
+	width: 100%;
+	height: auto;
+	border-radius: 15px;
+	box-shadow: 0px 3px 10px rgba(0,0,0,0.4);
 }
 
 /* MEDIA QUERIES */
