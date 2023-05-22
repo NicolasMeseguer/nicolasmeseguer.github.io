@@ -60,3 +60,12 @@ h1, h2, h3, h4, b {
 #theme:hover, #lan:hover {
 	background-color: var(--bg-color);
 }
+
+/* TEACHING RELATED */
+.academic-name {
+	color: #0dcaf0;
+}
+
+.academic-block {
+	border-left: 2px #0dcaf0 solid;
+}

@@ -75,7 +75,7 @@
 						</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" id="tutorials" href="#" 
+							<a class="nav-link d-none" id="tutorials" href="#" 
 								data-es="Tutoriales" 
 								data-en="Tutorials">
 							</a>
@@ -85,6 +85,15 @@
 								data-es="Enseñanza" 
 								data-en="Academic">
 							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" id="particular" href="#" 
+								data-es="Clases Particulares" 
+								data-en="Private Lessons">
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" id="mowatave" href="https://mowatave.com" target="_blank">Mowatave</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link d-none" id="projects" href="#" 
@@ -118,7 +127,7 @@
 			<div class="row content">
 				
 				<!-- Nicolas Meseguer profile and contact info -->
-				<div class="col-md-3 language">
+				<div id="leftPanel" class="col-md-3 language">
 					<div class="row mb-3">
 						<div class="col">
 							<img src="assets/img/NicolasMeseguer.webp" class="rounded me-auto d-block img-fluid profilepicture" alt="Nicolas Meseguer profile picture">
@@ -129,9 +138,9 @@
 
 					<div class="d-none" id="contadorVisitas"></div>
 
-					<p class="t-secondary mb-4" 
-						data-es="Estudiante de doctorado en Arquitectura de Computadores en la Universidad de Murcia." 
-						data-en="Ph.D. Computer Architecture Student at University of Murcia.">
+					<p class="mb-4">
+						<span class="t-secondary" data-es="Estudiante de doctorado en Arquitectura de Computadores en la Universidad de Murcia y CTO en " 
+						data-en="Ph.D. Computer Architecture Student at University of Murcia and CTO at "></span> <a href="https://mowatave.com" class="link-dark" target="_blank">Mowatave</a>.
 					</p>
 					
 					<div class="row mb-2">
@@ -159,7 +168,7 @@
 						</div>
 
 						<div class="col-10">
-							<a href="assets/documents/NicolasMeseguerCV.pdf" class="link-dark" target="_blank" data-es="CV [Actualizado 03/2023]" data-en="CV [Updated 03/2023]"></a>
+							<a href="assets/documents/NicolasMeseguerCV.pdf" class="link-dark" target="_blank" data-es="CV [Actualizado 05/2023]" data-en="CV [Updated 05/2023]"></a>
 						</div>
 					</div>
 
@@ -229,8 +238,8 @@
 					<div class="container">
 						<div class="row language">
 							<p class="mt-2 justify" 
-								data-es="Nace en Murcia, España en 1997. En 2021 obtiene el grado de ingeniería informática por la Universidad Católica San Antonio de Murcia con mención honorífica a la excelencia académica. A continuación cursa el máster en la Universidad de Murcia obteniendo el título de máster en nuevas tecnologías en informática en el año 2022. Además, obtuvo una beca de iniciación a la investigación de la Universidad Católica San Antonio de Murcia con duración de 6 meses en el año 2021. En el año 2022 obtiene una beca de la Fundación Séneca para realizar la tesis doctoral en la Universidad de Murcia, donde participa en actividades docentes a partir del año 2023. Posee comunicaciones en congresos nacionales. Domina las lenguas español e inglés." 
-								data-en="Born in Murcia, Spain in 1997. In 2021 he obtained a degree in computer engineering from the Universidad Católica San Antonio de Murcia with honorable mention for academic excellence. Then he studied a master's degree at the University of Murcia obtaining the degree of master in new technologies in computer science in 2022. In addition, he obtained a research scholarship at the Universidad Católica San Antonio de Murcia for 6 months in the year 2021. In the year 2022 he obtained a scholarship from the Fundación Séneca to do his doctoral thesis at the University of Murcia, where he participates in teaching activities starting from 2023. He has published papers in national congresses. He is fluent in Spanish and English.">
+								data-es="Nace en Murcia, España en 1997. En 2021 obtiene el grado de ingeniería informática por la Universidad Católica San Antonio de Murcia con mención honorífica a la excelencia académica. A continuación cursa el máster en la Universidad de Murcia obteniendo el título de máster en nuevas tecnologías en informática en el año 2022. Además, obtuvo una beca de iniciación a la investigación de la Universidad Católica San Antonio de Murcia con duración de 6 meses en el año 2021. En el año 2022 obtiene una beca de la Fundación Séneca para realizar la tesis doctoral en la Universidad de Murcia, donde participa en actividades docentes a partir del año 2023, ese mismo año funda Mowatave, una empresa de desarrollo software, desempeñando el rol de CTO y liderando el equipo técnico. Posee comunicaciones en congresos nacionales. Domina las lenguas español e inglés." 
+								data-en="Born in Murcia, Spain in 1997. In 2021 he obtained a degree in computer engineering from the Universidad Católica San Antonio de Murcia with honorable mention for academic excellence. He then studied a master's degree at the University of Murcia obtaining a master's degree in new technologies in computer science in 2022. In addition, he received a research initiation scholarship from the Universidad Católica San Antonio de Murcia for a period of six months in in 2021. In 2022 he obtained a scholarship from the Fundación Séneca to undertake a doctoral thesis at the University of Murcia, where he participates in teaching activities from 2023. That same year he founded Mowatave, a software development company, serving as the CTO and leading the technical team. He has presented at national conferences and is proficient in both Spanish and English.">
 							</p>
 							
 							<h4 id="researchinterestsH4" class="mt-2" 
@@ -738,6 +747,125 @@
 								<div class="academic-year language">3.00 ECTS. <span data-en="February 2023 - June 2023" data-es="Febrero 2023 - Junio 2023"></span></div>
 								<div class="mt-1"><a href="https://twitter.com/AMPE_UMU" target="_blank" class="link-dark"><i class="fa-brands fa-twitter"></i></a></div>
 							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<!-- Clases particulares -->
+				<div class="col-md-12 mb-5" id="particularContent">
+					<div class="container language">
+						<h1 class="particular-h1 mb-3" data-es="La calidad siempre es prioritaria." data-en="Quality always goes first."></h1>
+						
+						<h4 class="particular-clickable">🧑 <span class="particular-h4"><span data-es="¿Quién es " data-en="Who's "></span><span class="particular-name">Nicolás Meseguer</span>?</span></h4>
+						<div>
+							<p>
+								<img src="assets/img/NicolasMeseguer.webp" alt="Nicolás Meseguer" class="rounded img-fluid profilepicture particular-img">
+								👋 ¡Hola a todos! Soy un apasionado de la informática y la enseñanza. He estado inmerso en el fascinante mundo de la tecnología desde que era un niño y desde entonces, he recorrido un largo camino académico y profesional. Mi viaje comenzó con un Grado Superior en Desarrollo Web, seguido de un Grado en Ingeniería Informática en la UCAM, y luego un Máster en Nuevas Tecnologías en Informática en la Universidad de Murcia. Actualmente, estoy trabajando en mi doctorado, mientras tengo el privilegio de dar clases en la Universidad de Murcia.
+								<br><br>
+
+								En mi experiencia docente, he encontrado que cada estudiante es único y merece un <span class="underline">enfoque de enseñanza personalizado</span> que se ajuste a sus propias necesidades y ritmo de aprendizaje. Por ello, mi objetivo principal es brindar una enseñanza de calidad y adaptada a cada uno de mis alumnos, con posibilidad de <span class="underline">enseñanza en Inglés y Castellano</span>. Estos son algunos de mis enfoques de enseñanza:
+								<br>
+
+								<ol>
+									<li><b>Apoyo constante</b>: Estoy disponible para resolver dudas o proporcionar ayuda adicional cuando sea necesario. Creo que la comunicación abierta y regular es clave para un aprendizaje efectivo. 📞</li>
+									<li><b>Herramientas innovadoras</b>: Utilizo herramientas de última generación para facilitar el aprendizaje y hacer que incluso los conceptos más complejos sean comprensibles. Uso de tabletas para ilustrar ideas, software colaborativo para trabajar en tiempo real, o proporcionar materiales de estudio personalizados. 💻📚</li>
+									<li><b>Paciencia y comprensión</b>: Entiendo que todos aprendemos a nuestro propio ritmo. Por lo tanto, mi enfoque es siempre paciente y alentador, asegurándome de que cada concepto se comprenda completamente antes de pasar al siguiente. 🤗</li>
+								</ol>
+
+							</p>
+						</div>
+
+						<h4 class="particular-clickable">💼 <span class="particular-h4" data-es="Experiencia previa" data-en="Previous experience"></span></h4>
+						<div>
+							<p>
+								Siempre he sido un apasionado de la informática. Mi historia con los ordenadores y la programación comenzó desde muy pequeño pero se puso en serio cuando me lancé a estudiar un <span class="underline">Grado Superior</span> de Desarrollo Web. No solo me encantó, sino que obtuve unas notas estupendas. Esto me abrió las puertas a una beca Erasmus+ para hacer prácticas en el extranjero. ¡Y sí, resulta que además de hablar informática, también hablo inglés bastante bien! 😂
+								<br><br>
+
+								Después de aquella experiencia, me sumergí en el <span class="underline">Grado en Ingeniería Informática</span> en la Universidad Católica San Antonio de Murcia (UCAM). Fueron años intensos y fascinantes en los que me llevé la sorpresa de mi vida al terminar con una media de 9.3 y, para mi asombro, ¡recibir el premio al mejor expediente de mi promoción! 🤯 (+26 matrículas de honor).
+								<br><br>
+								
+								Pero mi amor por la informática y la curiosidad por seguir aprendiendo no conocían límites, así que me lancé a por un <span class="underline">Máster en Nuevas Tecnologías en Informática</span> en la Universidad de Murcia. Durante este tiempo, tuve la suerte de trabajar codo con codo con el Barcelona Supercomputing Center (BSC) en mi Trabajo de Fin de Máster, que acabó con una calificación de 9.9. Durante esos años, también tuve la oportunidad de compartir mi pasión por la informática a través de dos artículos que publiqué en congresos nacionales.
+								<br><br>
+								
+								Hoy, gracias a una beca de la prestigiosa Fundación Séneca (¡y estoy muy orgulloso de ser uno de los cuatro seleccionados en toda la región!), estoy metido de lleno en mis <span class="underline">estudios de doctorado</span>. Y para redondear esta aventura, también tengo la increíble oportunidad de dar clases en la Universidad de Murcia, donde este año soy el profesor encargado de las prácticas de la asignatura Arquitecturas Multinúcleo y de Propósito Específico (AMPE). ¡Así que aquí estoy, listo para compartir todo lo que he aprendido en mi camino!
+							</p>
+						</div>
+
+						<h4 class="particular-clickable">🎓 <span class="particular-h4" data-es="Especializaciones y cursos" data-en="Specializations and courses"></span></h4>
+						<div>
+							<p>
+								Con mi amplia formación y experiencia, puedo ayudar a estudiantes de todas las edades y niveles, desde la primaria hasta la universidad. Aquí tienes una idea de las áreas en las que me especializo:
+
+								<ol>
+									<li><b>Informática básica</b>: Desde cómo utilizar un ordenador, navegación por internet, hasta seguridad informática básica, puedo ayudar a los más jóvenes a familiarizarse y desenvolverse en el mundo digital. 🖥️</li>
+									<li><b>Programación y desarrollo web</b>: ¿Estás interesado en aprender a programar o a crear tu propia página web? Puedo enseñar desde los fundamentos de la programación hasta los lenguajes más avanzados, y orientar en el diseño y desarrollo de sitios web. 💻🌐</li>
+									<li><b>Asignaturas universitarias de informática</b>: Si estás cursando un Grado o Máster en Informática y necesitas ayuda extra, puedo ofrecer soporte en asignaturas de computación, arquitectura, sistemas operativos, entre otras. 🎓🔬</li>
+									<li><b>Inglés Técnico</b>: Gracias a mi experiencia estudiando y trabajando en el extranjero, puedo ayudarte a mejorar tu inglés técnico y académico, una habilidad esencial en el mundo de la informática y la tecnología. 🌍🗣️</li>
+								</ol>
+
+								Mi enfoque es siempre adaptar las lecciones a las necesidades específicas de cada estudiante. Así que <span class="underline">si tienes una solicitud especial, no dudes en comunicarte conmigo</span>, estaré encantado de atender tus necesidades o las de tu hijo. 🤝
+							</p>
+						</div>
+
+						<h4 class="particular-clickable">📚 <span class="particular-h4" data-es="Material didáctico" data-en="Educational materials"></span></h4>
+						<div>
+							<p>
+								Una de las cosas que realmente diferencia mis clases de las de otras academias o profesores particulares es el enfoque práctico y colaborativo que utilizo. Para asegurarme de que mis alumnos realmente comprendan y apliquen lo que aprenden, hago uso de una variedad de herramientas didácticas y tecnológicas:
+								
+								<ol>
+									<li><b>Tableta e iPad</b>: Utilizo mi tableta y iPad para dibujar y explicar conceptos en tiempo real durante las clases. Esto significa que tendrás una explicación visual clara de lo que estoy enseñando, lo que facilitará la comprensión y retención. 🎨📱</li>
+									<li><b>Programas de dibujo</b>: Domino una serie de programas de dibujo que me permiten ilustrar ideas y conceptos de una manera fácil de entender. Así, los alumnos pueden visualizar exactamente lo que estamos discutiendo y cómo se aplica. 🖌️💡</li>
+									<li><b>Herramientas colaborativas</b>: Utilizo herramientas como Miro y Draw.io, que permiten a los alumnos participar y colaborar en tiempo real. Esto significa que no solo verán lo que hago, sino que también tendrán la oportunidad de participar proactivamente y aprender haciendo. 🔄🎲</li>
+								</ol>
+
+								El uso de estas herramientas modernas y colaborativas permite a los alumnos experimentar un aprendizaje interactivo y atractivo que no solo los ayudará a entender los conceptos, sino que también les dará las habilidades prácticas que necesitarán en el mundo real.
+								<br><br>
+								¡El objetivo siempre es proporcionar una enseñanza de la más alta calidad y hacer del aprendizaje una experiencia agradable y valiosa! 🌟🚀
+							</p>
+						</div>
+
+						<h4 class="particular-clickable">💰 <span class="particular-h4" data-es="Precio hora" data-en="Price per hour"></span></h4>
+						<div>
+							<p>
+								Entiendo que la calidad de la educación es una inversión importante para el futuro. Mi enfoque siempre ha sido proporcionar un servicio excepcional que supere las expectativas y justifique cada euro invertido.
+								<br><br>
+
+								El precio establecido es de <b>20 euros/hora</b>. Este precio refleja la calidad de la enseñanza que ofrezco, incluyendo mi amplia experiencia, mi enfoque personalizado y la utilización de herramientas de aprendizaje interactivas y modernas.
+								<br><br>
+
+								Para mayor comodidad, acepto varios métodos de pago, incluyendo <span class="underline">Bizum</span>, <span class="underline">Transferencia Bancaria</span> y <span class="underline">PayPal</span>. Quiero hacer que el proceso sea lo más sencillo y sin complicaciones posible para ti.
+								<br><br>
+
+								Al final, no solo estás pagando por un tutor, sino por una experiencia educativa de alta calidad, una que te brindará de las herramientas y la confianza que necesita para tener éxito en tu carrera académica y/o profesional. 🎯💎
+							</p>
+						</div>
+
+						<h4 class="particular-clickable">❓ <span class="particular-h4" data-es="Preguntas Frecuentes" data-en="FAQ"></span></h4>
+						<div>
+							<p>
+								<ol>
+									<li><b>¿Se puede adaptar al horario de mi hijo?</b>: Sé lo ocupadas que pueden llegar a ser las vidas de los estudiantes, por lo que ofrezco un horario flexible y adaptable a tus necesidades. ⏰🔄</li>
+									<li><b>Si una clase se cancela, ¿qué pasa?</b>: Entiendo que los imprevistos pueden surgir. Si necesitas cancelar una clase, buscaremos juntos otro horario que se acomode. La meta siempre es no perder la oportunidad de aprender y crecer. 🔄📅</li>
+									<li><b>¿Qué métodos de pago aceptas?</b>: Para hacer que el proceso sea lo más conveniente posible, acepto varios métodos de pago, incluyendo Bizum, transferencia bancaria y PayPal. 💰💳</li>
+									<li><b>¿Qué garantiza que la enseñanza será de alta calidad?</b>: Mi experiencia académica y profesional hablan por sí mismas. Además, me dedico a usar herramientas y técnicas de enseñanza modernas y efectivas para asegurar el mejor aprendizaje posible. 🎯🌟</li>
+								</ol>
+
+								Si tienes alguna otra pregunta que no haya sido respondida aquí, por favor no dudes en ponerte en contacto conmigo. Estoy aquí para ayudarte y asegurarme de que recibas la mejor educación posible. 🤝💡
+							</p>
+						</div>
+
+						<h4 class="particular-clickable">📞 <span class="particular-h4" data-es="Contacto" data-en="Contact"></span></h4>
+						<div>
+							<p>
+								¡Si tienes alguna pregunta, necesitas más información, o te gustaría programar una clase inicial, no dudes en ponerte en contacto conmigo!
+								<br><br>
+								
+								Puedes enviarme un mensaje a mi dirección de correo electrónico de trabajo: 📧 <a href="mailto:n.mesegueriborra@um.es" class="link-dark">n.mesegueriborra@um.es</a>.
+								<br><br>
+
+								Si prefieres usar WhatsApp, también puedes enviarme un mensaje al siguiente número: <span class="underline">+34 616 85 23 60</span>. Por favor, ten en cuenta que este número sólo está disponible para mensajes de WhatsApp. 📱
+							</p>
 						</div>
 
 					</div>

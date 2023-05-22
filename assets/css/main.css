@@ -1,6 +1,15 @@
 /* MOBILE's FIRST - Custom properties */
 /* This classes will be then modified for bigger screens */
 
+#mowatave {
+	color: #2bd284 !important;
+	text-decoration: underline;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
 a {
 	text-decoration-thickness: 1px;
 }
@@ -96,12 +105,7 @@ li > .active {
 }
 
 .academic-block {
-	border-left: 2px #22517d solid;
 	padding-left: 15px;
-}
-
-.academic-name {
-	color: #22517d;
 }
 
 .academic-rol {
@@ -229,6 +233,47 @@ li > .active {
 .clickable:hover {
 	box-shadow: 0px 3px 50px rgba(0,0,0,0.3);
 	transform: scale(1.03,1.03);
+}
+
+/* CLASES PARTICULARES */
+.particular-h1 {
+	font-style: italic;
+	font-weight: 400;
+	padding: 0.2em 0.2em 0.2em 1em;
+	border-left: 5px #3fa5e9 solid;
+	background-color: rgba(137, 188, 230, 0.2);
+}
+
+.particular-h4 {
+	font-weight: 400;
+}
+
+#particularContent  p {
+	margin-top: 1em;
+}
+
+.particular-name {
+	font-style: italic;
+	text-decoration: underline;
+}
+
+.particular-clickable {
+	margin-bottom: 0.6em;
+	padding: 0.3em;
+	cursor: pointer;
+	
+	border-radius: 15px;
+	box-shadow: 0px 3px 10px rgba(0,0,0,0.4);
+}
+
+.particular-clickable:hover {
+	transform: scale(1.02,1.02);
+	transition: 0.4s;
+}
+
+.particular-img {
+	float: left;
+	padding: 0em 1em 1em 0em;
 }
 
 /* MEDIA QUERIES */

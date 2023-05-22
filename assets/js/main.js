@@ -6,11 +6,16 @@ $('#conferencesContent').hide();
 $('#projectsContent').hide();
 $('#tutorialsContent').hide();
 $('#academicContent').hide();
+$('#particularContent').hide();
 /* Template
 $('#nameContent').hide();
 */
 $('#theme').hide();
 $('#lan').hide();
+
+// Hides all the divs in the particular, unless the first one
+$('.particular-clickable').next().hide();
+$('.particular-clickable').next()[0].style.display="block";
 
 $(document).ready(function(){
 
@@ -142,8 +147,8 @@ $(document).ready(function(){
 		}
 	});
 
-	// Handle 'Conferences' content
-	$('#conferences').click(function(e) {
+	// Handle 'Particular' content
+	$('#particular').click(function(e) {
 
 		// If the div has already the class active, no need to reload the divs...
 		if(!$(e.target).hasClass('active')) {
@@ -155,43 +160,60 @@ $(document).ready(function(){
 			clearActiveDivs();
 
 			// Show current content
-			activateDiv('#conferencesContent');
+			activateDiv('#particularContent');
 		}
 	});
+
+	// Handle 'Conferences' content
+	// $('#conferences').click(function(e) {
+
+	// 	// If the div has already the class active, no need to reload the divs...
+	// 	if(!$(e.target).hasClass('active')) {
+	// 		// Update navbar
+	// 		clearActiveLinks();
+	// 		activateLink(e);
+
+	// 		// Hide other contents
+	// 		clearActiveDivs();
+
+	// 		// Show current content
+	// 		activateDiv('#conferencesContent');
+	// 	}
+	// });
 
 	// Handle 'Experience' content
-	$('#experience').click(function(e) {
+	// $('#experience').click(function(e) {
 
-		// If the div has already the class active, no need to reload the divs...
-		if(!$(e.target).hasClass('active')) {
-			// Update navbar
-			clearActiveLinks();
-			activateLink(e);
+	// 	// If the div has already the class active, no need to reload the divs...
+	// 	if(!$(e.target).hasClass('active')) {
+	// 		// Update navbar
+	// 		clearActiveLinks();
+	// 		activateLink(e);
 
-			// Hide other contents
-			clearActiveDivs();
+	// 		// Hide other contents
+	// 		clearActiveDivs();
 
-			// Show current content
-			activateDiv('#experienceContent');
-		}
-	});
+	// 		// Show current content
+	// 		activateDiv('#experienceContent');
+	// 	}
+	// });
 
 	// Handle 'Projects' content
-	$('#projects').click(function(e) {
+	// $('#projects').click(function(e) {
 
-		// If the div has already the class active, no need to reload the divs...
-		if(!$(e.target).hasClass('active')) {
-			// Update navbar
-			clearActiveLinks();
-			activateLink(e);
+	// 	// If the div has already the class active, no need to reload the divs...
+	// 	if(!$(e.target).hasClass('active')) {
+	// 		// Update navbar
+	// 		clearActiveLinks();
+	// 		activateLink(e);
 
-			// Hide other contents
-			clearActiveDivs();
+	// 		// Hide other contents
+	// 		clearActiveDivs();
 
-			// Show current content
-			activateDiv('#projectsContent');
-		}
-	});
+	// 		// Show current content
+	// 		activateDiv('#projectsContent');
+	// 	}
+	// });
 
 	/*
 	// Handle 'Template' content
@@ -217,6 +239,17 @@ $(document).ready(function(){
 		window.open($(e.currentTarget)[0].childNodes[1].innerText, '_blank').focus();
 	});
 
+	// Whenever you clic on a clases particulares heading, you should toggle
+	$('.particular-clickable').click(function(e) {
+		var e = $(e.currentTarget)[0].nextElementSibling;
+		if (e.style.display === "none") {
+			e.style.display = "block";
+		}
+		else {
+			e.style.display = "none";
+		}
+	});
+
 	// Copy the citation to the clipboard
 	// THIS SHOULD BE THE SAME FOR ALL THE PAPERS
 	$(document).on("click", "#citation", function(){
@@ -229,9 +262,14 @@ $(document).ready(function(){
 
 	// Controls the URL; if it has '#blog'
 	// then trigger the 'Blog' clic
-	if (((window.location).href).substring(((window.location).href).lastIndexOf('#') + 1) == 'tutorials') {
-		$('#tutorials').click();
-		$('#tutorialsContent').focus();
+	// if (((window.location).href).substring(((window.location).href).lastIndexOf('#') + 1) == 'tutorials') {
+	// 	$('#tutorials').click();
+	// 	$('#tutorialsContent').focus();
+	// }
+
+	if (((window.location).href).substring(((window.location).href).lastIndexOf('#') + 1) == 'clases-particulares') {
+		$('#particular').click();
+		$('#particularContent').focus();
 	}
 
 	// Controls the options menu
@@ -322,6 +360,12 @@ function clearActiveDivs() {
 
 function activateLink(e) {
 	$(e.target).addClass('active');
+	
+	// Hide left panel
+	if(e.target.id == "particular")
+		$('#leftPanel').hide();
+	else
+		$('#leftPanel').show();
 }
 
 function activateDiv(divId) {

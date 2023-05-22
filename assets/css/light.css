@@ -60,3 +60,12 @@ h1, h2, h3, h4, b {
 .blog-short {
 	color: #717378;
 }
+
+/* TEACHING RELATED */
+.academic-name {
+	color: #22517d;
+}
+
+.academic-block {
+	border-left: 2px #22517d solid;
+}
