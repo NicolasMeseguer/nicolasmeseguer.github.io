@@ -69,3 +69,11 @@ h1, h2, h3, h4, b {
 .academic-block {
 	border-left: 2px #0dcaf0 solid;
 }
+
+.student-block {
+	border-left: 2px #00FFC1 solid;
+}
+
+.student-name {
+	color: #00FFC1;
+}
