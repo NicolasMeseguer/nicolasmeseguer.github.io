@@ -7,33 +7,50 @@
 Academic Portfolio
 =====================================
 
-You can find the LIVE Website [here](https://nicolasmeseguer.github.io).
+HTML5 + CSS3 + JavaScript, responsive, and minimalistic template for academic portfolios (made from scratch, taking in consideration some details from Beautiful Jekyll templates).
 
-This template has been made from scratch taking in consideration some details from Beautiful Jekyll templates.
+You can find the LIVE Website [here](https://nicolasmeseguer.github.io).
 
 Reach me @ [n.mesegueriborra@um.es](mailto:n.mesegueriborra@um.es).
 
-Language
+How To Use This Template
+=====================================
+
+1. Fork this repository [here](https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/fork). 
+2. Go to the settings of your forked repository and rename it to `yourusername.github.io`.
+3. Create a new branch called `gh-pages`.
+4. Go to the settings of your repository and enable GitHub Pages.
+5. Select the `gh-pages` branch as the source.
+6. Consider giving this repository a star if you liked it 🤍.
+
+
+
+Multi-Language
 --------
-Add the class `language` to the code block to enable language translation.
+¿Want to add multi-language support? It's easy! Just follow these steps:
 
-```html
-<div data-es="Hola" data-en="Hello">
-  <!-- This won't work -->
-</code>
+1. Add your language to the `assets/js/languages.json` file, according to ISO 3166 alpha-2 standard. For example, for english and spanish:
+```json
+"en": {
+  "flag": "https://flagcdn.com/w20/us.png"
+},
+"es": {
+  "flag": "https://flagcdn.com/w20/es.png"
+}
 ```
 
+2. Add the class `language` to each `<tag>` you would like to translate, and include the `data-` attribute with the translation. For example, for a greeting in english and spanish:
 ```html
-<div class="language" data-es="Hola" data-en="Hello">
-  <!-- This will work -->
-</code>
+<tag class="language" data-en="Hello" data-es="Hola">
+  <!-- You can leave this empty -->
+</tag>
 ```
+
+3. Enjoy your multi-language portfolio! 🌍
 
 Contributing
 ------------
-Feel free to contribute to this project. You can do so by forking the project and submitting a pull request. You can find a list of issues/TODOs in the [issues tab](https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/issues).
-
-Also, if you have any suggestions or feedback, please let me know by creating a new issue.
+Feel free to contribute to this project. You can do so by forking the project and submitting a pull request. Find a list of issues/TODOs in the [issues tab](https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/issues). Suggestions or feedback are well received.
 
 License
 -------

@@ -30,13 +30,8 @@ $(document).ready(function(){
 			localStorage.theme = "dark";
 	}
 	
-	// First time, check the locale
-	let userLang = navigator.language || navigator.userLanguage;
-	if(localStorage.getItem("lan") === null){
-		localStorage.lan = "en";
-		if (userLang.split('-')[0] == "es")
-			localStorage.lan = "es";
-	}
+	// Create the language manager
+	const langManager = new LanguageManager();
 
 	// Maybe first time or not, so load the localStorage value
 	$('<link>').appendTo('head').attr({
@@ -54,12 +49,6 @@ $(document).ready(function(){
 		});
 		$('#theme').empty().append("<i class='fa-duotone fa-lightbulb-slash'></i>");
 	}
-	// Done because light is the one by default
-	if(localStorage.lan == "es") {
-		$('#lan img').attr("src","/assets/img/es_flag.webp");
-		$('#lan').addClass("es");
-	}
-	updateLanguage();
 
 	// Handle 'About Me' content
 	$('#aboutme').click(function(e) {
@@ -316,34 +305,11 @@ $(document).ready(function(){
 		}
 	})
 
-	// Animates the lan button + functionality
-	$('#lan').click(function(e) {
-		if(!$(e.currentTarget).hasClass('es')){
-			$(e.currentTarget).addClass('es');
-
-			$('#lan img').attr("src","/assets/img/es_flag.webp");
-
-			localStorage.lan = "es"
-		}
-		else {
-			$(e.currentTarget).removeClass('es');
-
-			$('#lan img').attr("src","/assets/img/en_flag.webp");
-
-			localStorage.lan = "en"
-		}
-
-		updateLanguage();
-	})
-
+	$('#lan').click(function() {
+        const newLang = langManager.getNextLanguage();
+        langManager.setLanguage(newLang);
+    });
 });
-
-function updateLanguage() {
-	let lang = localStorage.lan;
-	$(".language *").each(function(){
-		$(this).html( $(this).data(lang) );
-	});
-}
 
 function clearActiveLinks() {
 	$('#navbarList .nav-item .nav-link').each(function() {
