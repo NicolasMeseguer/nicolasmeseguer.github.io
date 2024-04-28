@@ -9,36 +9,30 @@
 <h4 align="center">An awesome academic portfolio template for GitHub Pages!</h4>
 
 <p align="center">
-  <a href="https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/graphs/contributors" target="_blank" style="text-decoration: none;">
+  <a href="https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/graphs/contributors">
     <img src="https://img.shields.io/github/contributors/NicolasMeseguer/nicolasmeseguer.github.io" alt="Contributors">
   </a>
-  &nbsp;
-  <a href="https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/network/members" target="_blank" style="text-decoration: none;">
-    <img src="https://img.shields.io/github/forks/NicolasMeseguer/nicolasmeseguer.github.io?style=" alt="Forks">
+  <a href="https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/network/members">
+    <img src="https://img.shields.io/github/forks/NicolasMeseguer/nicolasmeseguer.github.io?style" alt="Forks">
   </a>
-  &nbsp;
-  <a href="https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/stargazers" target="_blank" style="text-decoration: none;">
+  <a href="https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/stargazers">
     <img src="https://img.shields.io/github/stars/NicolasMeseguer/nicolasmeseguer.github.io?style" alt="Stars">
   </a>
-  &nbsp;
-  <a href="https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/issues" target="_blank" style="text-decoration: none;">
+  <a href="https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/issues">
     <img src="https://img.shields.io/github/issues/NicolasMeseguer/nicolasmeseguer.github.io" alt="Issues">
   </a>
-  &nbsp;
-  <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank" style="text-decoration: none;">
+  <a href="http://creativecommons.org/licenses/by-sa/4.0/">
     <img src="https://img.shields.io/github/license/NicolasMeseguer/nicolasmeseguer.github.io" alt="License">
   </a>
-  &nbsp;
-  <a href="https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/releases" target="_blank" style="text-decoration: none;">
+  <a href="https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/releases">
     <img src="https://img.shields.io/github/v/release/NicolasMeseguer/nicolasmeseguer.github.io" alt="Version">
   </a>
-  &nbsp;
 </p>
 
 <p align="center">
-  <a href="https://nicolasmeseguer.github.io/" target="_blank">View Demo</a> •
-  <a href="https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/issues/new?labels=bug&template=_bug-report.md" target="_blank">Report Bug</a> •
-  <a href="https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/issues/new?labels=enhancement&template=_feature-request.md" target="_blank">Request Feature</a>
+  <a href="https://nicolasmeseguer.github.io/">View Demo</a> •
+  <a href="https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/issues/new?labels=bug&template=_bug-report.md">Report Bug</a> •
+  <a href="https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/issues/new?labels=enhancement&template=_feature-request.md">Request Feature</a>
 </p>
 
 <p align="center">
@@ -48,10 +42,11 @@
 ## Key Features
 
 - 📦 **Easy to Use**: Just fork, edit and deploy!
+- 🚀 **Blazingly Fast**: Built with performance in mind.
+- 🌍 **Multi-Language**: Add multi-language support with ease.
 - 🎓 **Academic**: Perfect for students and academics.
 - 📱 **Responsive**: Works on all devices.
-- 🌍 **Multi-Language**: Add multi-language support with ease.
-- 🚀 **Blazingly Fast**: Built with performance in mind.
+- 🌙 **Dark Mode**: Toggle between light and dark mode.
 - 🎨 **Customizable**: Easily change the theme colors and add your own touch.
 - 📄 **Resume**: Add your resume with a single click.
 - 🛠️ **Maintenance**: Regular updates and improvements.
