@@ -55,8 +55,9 @@
 - 🌙 **Dark Mode**: Toggle between light and dark mode.
 - 📰 **BibTeX**: Add citations effortlessly and provide an easy way to copy it.
 - 🎨 **Customizable**: Easily change the theme colors and add your own touch.
+- 📊 **Insights**: Connect your portfolio to Google Analytics to get insights.
 - 🛠️ **Maintenance**: Regular updates and improvements.
-
+- 📚 **Documentation**: Detailed documentation to help you get started.
 
 
 ## How To Use
@@ -100,6 +101,12 @@
 We are working on a customization guide. Stay tuned! 🎨
 
 
+
+## Insights
+
+1. Go to [Google Tag Manager](https://tagmanager.google.com/) and create a new account.
+2. Create a new container and look for the `GTM-XXXXXXX` code inside the scripts.
+3. Add the code to `assets/js/google-analytics.json` file.
 
 ## Contributing
 

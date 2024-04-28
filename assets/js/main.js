@@ -19,10 +19,6 @@ $('.particular-clickable').next()[0].style.display="block";
 
 $(document).ready(function(){
 
-	$.getJSON("https://api.countapi.xyz/hit/nicolasmeseguer.github.io/634c2142-b35d-430e-b51c-dad16880dd3a", function(response) {
-		$("#contadorVisitas").text(response.value);
-	});
-
 	// First time, check the theme
 	if(localStorage.getItem("theme") === null){
 		localStorage.theme = "light";
@@ -348,10 +344,4 @@ function scrollToContent(divId) {
 			scrollTop: $(divId).offset().top
 		}, 1);
 	}
-}
-
-function resetViews() {
-	$.getJSON("https://api.countapi.xyz/set/nicolasmeseguer.github.io/634c2142-b35d-430e-b51c-dad16880dd3a?value=0", function(response) {
-		$("#contadorVisitas").text("0");
-	});
 }

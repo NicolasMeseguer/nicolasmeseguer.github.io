@@ -3,6 +3,30 @@
 
 	<head>
 
+		<!-- Google Tag Manager -->
+		<script>
+			fetch('./assets/js/config.json')
+				.then(response => response.json())
+				.then(data => {
+					const gtmCode = data.googleAnalyticsCode;
+	
+					// Script para cargar Google Tag Manager
+					(function(w, d, s, l, i) {
+						w[l] = w[l] || [];
+						w[l].push({
+							'gtm.start': new Date().getTime(),
+							event: 'gtm.js'
+						});
+						var f = d.getElementsByTagName(s)[0],
+							j = d.createElement(s),
+							dl = l != 'dataLayer' ? '&l=' + l : '';
+						j.async = true;
+						j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+						f.parentNode.insertBefore(j, f);
+					})(window, document, 'script', 'dataLayer', gtmCode);
+				});
+		</script>
+
 		<!-- Meta tags -->
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,21 +55,50 @@
 	</head>
 
 	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-LS62H88490"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
+	<!-- <script>
+        fetch('./assets/js/config.json')
+            .then(response => response.json())
+            .then(config => {
+                // Google Analytics
+                const scriptTag = document.createElement('script');
+                scriptTag.async = true;
+                scriptTag.src = `https://www.googletagmanager.com/gtag/js?id=${config.googleAnalyticsId}`;
+                document.head.appendChild(scriptTag);
 
-		gtag('config', 'G-LS62H88490');
-	</script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', config.googleAnalyticsId);
+            })
+            .catch(error => console.error('Error loading the configuration:', error));
+    </script> -->
 
 	<body>
+
+		<!-- Google Tag Manager (noscript) -->
+		<noscript id="gtm-noscript-placeholder"></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+		<script>
+			fetch('./assets/js/config.json')
+				.then(response => response.json())
+				.then(data => {
+					const gtmCode = data.googleAnalyticsCode;
+					const gtmNoscript = document.getElementById('gtm-noscript-placeholder');
+					const iframe = document.createElement('iframe');
+					iframe.src = `https://www.googletagmanager.com/ns.html?id=${gtmCode}`;
+					iframe.height = "0";
+					iframe.width = "0";
+					iframe.style.display = "none";
+					iframe.style.visibility = "hidden";
+					gtmNoscript.appendChild(iframe);
+				});
+		</script>
 
 		<!-- Bottom rounded button -->
 		<div class="options-button" id="options-toggler"><i class="fa-light fa-arrows-repeat"></i></div>
 		<div class="options-button" id="theme"><i class="fa-duotone fa-lightbulb"></i></div>
-		<div class="options-button" id="lan"><img class="lang-flag" src="/assets/img/en_flag.webp" alt="Flag indicating the english language is selected"></div>
+		<div class="options-button" id="lan"><img class="lang-flag" src="https://flagcdn.com/w20/us.png" alt="Flag indicating the english language is selected"></div>
 
 
 		<!-- Navbar  -->
@@ -135,8 +188,6 @@
 					</div>
 
 					<h3 class="mb-2">Nicolás Meseguer</h3>
-
-					<div class="d-none" id="contadorVisitas"></div>
 
 					<p class="mb-4">
 						<span class="t-secondary" data-es="Estudiante de doctorado en Arquitectura de Computadores en la Universidad de Murcia y CTO en " 
