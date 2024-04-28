@@ -30,6 +30,12 @@
 </p>
 
 <p align="center">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?logo=HTML5&logoColor=white" alt="HTML5">
+  <img src="https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white" alt="License">
+  <img src="https://shields.io/badge/JavaScript-F7DF1E?logo=JavaScript&logoColor=000&style=flat-square" alt="License">
+</p>
+
+<p align="center">
   <a href="https://nicolasmeseguer.github.io/">View Demo</a> •
   <a href="https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/issues/new?labels=bug&template=_bug-report.md">Report Bug</a> •
   <a href="https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/issues/new?labels=enhancement&template=_feature-request.md">Request Feature</a>
