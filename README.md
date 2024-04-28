@@ -1,49 +1,58 @@
-<!-- Improved compatibility of back to top link -->
-<a name="readme-top"></a>
+<h1 align="center">
+  <br>
+  <a href="https://github.com/NicolasMeseguer/nicolasmeseguer.github.io"><img src="assets/img/logo.png" alt="Academic Portfolio" width="200"></a>
+  <br>
+  Academic Portfolio
+  <br>
+</h1>
 
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![CC License][license-shield]][license-url]
-[![Version][version-shield]][version-url]
+<h4 align="center">An awesome academic portfolio template for GitHub Pages!</h4>
 
-<!-- Project Logo -->
-<br />
-<div align="center">
-  <a href="https://github.com/NicolasMeseguer/nicolasmeseguer.github.io">
-    <img src="assets/img/logo.png" alt="Logo" width="80" height="80">
+<p align="center">
+  <a href="https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/graphs/contributors">
+    <img src="https://img.shields.io/github/contributors/NicolasMeseguer/nicolasmeseguer.github.io" alt="Contributors">
   </a>
+  <a href="https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/network/members">
+    <img src="https://img.shields.io/github/forks/NicolasMeseguer/nicolasmeseguer.github.io?style" alt="Forks">
+  </a>
+  <a href="https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/stargazers">
+    <img src="https://img.shields.io/github/stars/NicolasMeseguer/nicolasmeseguer.github.io.svg?style" alt="Stars">
+  </a>
+  <a href="https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/issues">
+    <img src="https://img.shields.io/github/issues/NicolasMeseguer/nicolasmeseguer.github.io?style" alt="Issues">
+  </a>
+  <a href="http://creativecommons.org/licenses/by-sa/4.0/">
+    <img src="https://img.shields.io/github/license/NicolasMeseguer/nicolasmeseguer.github.io?style" alt="License">
+  </a>
+  <a href="https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/releases">
+    <img src="https://img.shields.io/github/v/release/NicolasMeseguer/nicolasmeseguer.github.io?style" alt="Version">
+  </a>
+</p>
 
-  <h3 align="center">Best Academic Portfolio</h3>
+<p align="center">
+  <a href="https://nicolasmeseguer.github.io/">View Demo</a> •
+  <a href="https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/issues/new?labels=bug&template=_bug-report.md">Report Bug</a> •
+  <a href="https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/issues/new?labels=enhancement&template=_feature-request.md">Request Feature</a>
+</p>
 
-  <p align="center">
-    An awesome academic portfolio template for GitHub Pages!
-    <br />
-    <a href="https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/blob/main/README.md"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://nicolasmeseguer.github.io/">View Demo</a>
-    ·
-    <a href="https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/issues/new?labels=bug&template=_bug-report.md">Report Bug</a>
-    ·
-    <a href="https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/issues/new?labels=enhancement&template=_feature-request.md">Request Feature</a>
-  </p>
-</div>
+<p align="center">
+  <img src="./assets/img/academicportfolio.gif" alt="Screenshot">
+</p>
 
-Academic Portfolio
-==================
+## Key Features
 
-HTML5 + CSS3 + JavaScript, responsive, and minimalistic template for academic portfolios (made from scratch, taking in consideration some details from Beautiful Jekyll templates).
-
-You can find the LIVE Website [here](https://nicolasmeseguer.github.io).
-
-Reach me @ [n.mesegueriborra@um.es](mailto:n.mesegueriborra@um.es).
+- 📦 **Easy to Use**: Just fork, edit and deploy!
+- 🎓 **Academic**: Perfect for students and academics.
+- 📱 **Responsive**: Works on all devices.
+- 🌍 **Multi-Language**: Add multi-language support with ease.
+- 🚀 **Blazingly Fast**: Built with performance in mind.
+- 🎨 **Customizable**: Easily change the theme colors and add your own touch.
+- 📄 **Resume**: Add your resume with a single click.
+- 🛠️ **Maintenance**: Regular updates and improvements.
 
 
 
-How To Use This Template
-------------------------
+## How To Use
 
 1. Fork this repository [here](https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/fork). 
 2. Go to the settings of your forked repository and rename it to `yourusername.github.io`.
@@ -54,8 +63,7 @@ How To Use This Template
 
 
 
-Multi-Language
---------------
+## Multi-Language
 
 ¿Want to add multi-language support? It's easy! Just follow these steps:
 
@@ -80,31 +88,20 @@ Multi-Language
 
 
 
-Contributing
-------------
+## Customization
+
+We are working on a customization guide. Stay tuned! 🎨
+
+
+
+## Contributing
 
 Feel free to contribute to this project. You can do so by forking the project and submitting a pull request. Find a list of issues/TODOs in the [issues tab](https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/issues). Suggestions or feedback are well received.
 
 
 
-License
--------
+## License
 
 [![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/)
 
-[nicolasmeseguer.github.io](https://github.com/NicolasMeseguer/nicolasmeseguer.github.io) © 2023 by [Nicolas Meseguer](https://github.com/NicolasMeseguer) is licensed under [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/NicolasMeseguer/nicolasmeseguer.github.io
-[contributors-url]: https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/NicolasMeseguer/nicolasmeseguer.github.io?style
-[forks-url]: https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/network/members
-[stars-shield]: https://img.shields.io/github/stars/NicolasMeseguer/nicolasmeseguer.github.io.svg?style
-[stars-url]: https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/network/stargazers
-[issues-shield]: https://img.shields.io/github/issues/NicolasMeseguer/nicolasmeseguer.github.io?style
-[issues-url]: https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/network/issues
-[license-shield]: https://img.shields.io/github/license/NicolasMeseguer/nicolasmeseguer.github.io?style
-[license-url]: http://creativecommons.org/licenses/by-sa/4.0/
-[version-shield]: https://img.shields.io/github/v/release/NicolasMeseguer/nicolasmeseguer.github.io?style
-[version-url]: https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/network/releases
+[nicolasmeseguer.github.io](https://github.com/NicolasMeseguer/nicolasmeseguer.github.io) © 2023 by [Nicolas Meseguer](https://github.com/NicolasMeseguer) is licensed under [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
