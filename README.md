@@ -25,9 +25,9 @@
     <br />
     <a href="https://nicolasmeseguer.github.io/">View Demo</a>
     ·
-    <a href="https://nicolasmeseguer.github.io/issues/new?labels=bug&template=_bug-report.md">Report Bug</a>
+    <a href="https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/issues/new?labels=bug&template=_bug-report.md">Report Bug</a>
     ·
-    <a href="https://nicolasmeseguer.github.io/issues/new?labels=enhancement&template=_feature-request.md">Request Feature</a>
+    <a href="https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/issues/new?labels=enhancement&template=_feature-request.md">Request Feature</a>
   </p>
 </div>
 
