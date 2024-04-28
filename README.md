@@ -53,8 +53,8 @@
 - 🎓 **Academic**: Perfect for students and academics.
 - 📱 **Responsive**: Works on all devices.
 - 🌙 **Dark Mode**: Toggle between light and dark mode.
+- 📰 **BibTeX**: Add citations effortlessly and provide an easy way to copy it.
 - 🎨 **Customizable**: Easily change the theme colors and add your own touch.
-- 📄 **Resume**: Add your resume with a single click.
 - 🛠️ **Maintenance**: Regular updates and improvements.
 
 
