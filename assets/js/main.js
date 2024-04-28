@@ -1,4 +1,5 @@
-// About Me content is the one by default shown
+// By default, all the divs are hidden, if you were to add a new div, you should hide it here.
+// If you want to show a div, you should clic on the corresponding link on the navbar.
 $('#educationContent').hide();
 $('#publicationsContent').hide();
 $('#experienceContent').hide();
@@ -7,9 +8,8 @@ $('#projectsContent').hide();
 $('#tutorialsContent').hide();
 $('#academicContent').hide();
 $('#particularContent').hide();
-/* Template
-$('#nameContent').hide();
-*/
+
+// Options menu is hidden by default
 $('#theme').hide();
 $('#lan').hide();
 
@@ -19,7 +19,7 @@ $('.particular-clickable').next()[0].style.display="block";
 
 $(document).ready(function(){
 
-	// First time, check the theme
+	// If the user has not selected a theme, then select the default one according to the user's preferences
 	if(localStorage.getItem("theme") === null){
 		localStorage.theme = "light";
 		if (window.matchMedia('(prefers-color-scheme: dark)').matches)
@@ -29,14 +29,15 @@ $(document).ready(function(){
 	// Create the language manager
 	const langManager = new LanguageManager();
 
-	// Maybe first time or not, so load the localStorage value
+	// Always load the light theme
 	$('<link>').appendTo('head').attr({
 		type: 'text/css', 
 		rel: 'stylesheet',
 		href: 'assets/css/light.css'
 	});
+
+	// If the user has the dark theme, then replace the light theme with the dark one
 	if (localStorage.theme == "dark") {
-		// Handle menu
 		$("link[href='assets/css/light.css']").remove();
 		$('<link>').appendTo('head').attr({
 			type: 'text/css', 
@@ -200,24 +201,23 @@ $(document).ready(function(){
 	// 	}
 	// });
 
-	/*
+
 	// Handle 'Template' content
-	$('#name').click(function(e) {
+	// $('#name').click(function(e) {
 
-		// If the div has already the class active, no need to reload the divs...
-		if(!$(e.target).hasClass('active')) {
-			// Update navbar
-			clearActiveLinks();
-			activateLink(e);
+	// 	// If the div has already the class active, no need to reload the divs...
+	// 	if(!$(e.target).hasClass('active')) {
+	// 		// Update navbar
+	// 		clearActiveLinks();
+	// 		activateLink(e);
 
-			// Hide other contents
-			clearActiveDivs();
+	// 		// Hide other contents
+	// 		clearActiveDivs();
 
-			// Show current content
-			activateDiv('#nameContent');
-		}
-	});
-	*/
+	// 		// Show current content
+	// 		activateDiv('#nameContent');
+	// 	}
+	// });
 
 	// Whenever you clic on a blog post, you should be redirected to that post' html
 	$('.clickable').click(function(e) {
@@ -257,7 +257,7 @@ $(document).ready(function(){
 		$('#particularContent').focus();
 	}
 
-	// Controls the options menu
+	// Controls the option menu toggler to show/hide the language and theme selectors
 	$('#options-toggler').click(function(e) {
 		if(!$(e.currentTarget).hasClass('active')) {
 			$(e.currentTarget).addClass('active');
@@ -271,10 +271,9 @@ $(document).ready(function(){
 		}
 	})
 
-	// Animates the theme button + functionality
+	// Alternates between light and dark themes
 	$('#theme').click(function(e) {
 		if(localStorage.theme != "dark"){
-
 			$('#theme').empty().append("<i class='fa-duotone fa-lightbulb-slash'></i>");
 
 			localStorage.theme = "dark"
@@ -287,7 +286,6 @@ $(document).ready(function(){
 			});
 		}
 		else {
-
 			$('#theme').empty().append("<i class='fa-duotone fa-lightbulb'></i>");
 
 			localStorage.theme = "light"
@@ -301,18 +299,21 @@ $(document).ready(function(){
 		}
 	})
 
+	// Alternates between the different available languages
 	$('#lan').click(function() {
         const newLang = langManager.getNextLanguage();
         langManager.setLanguage(newLang);
     });
 });
 
+// Clears the active links
 function clearActiveLinks() {
 	$('#navbarList .nav-item .nav-link').each(function() {
 		$(this).removeClass('active');
 	});
 }
 
+// Clears the active divs
 function clearActiveDivs() {
 	$('.container .content .active').each(function() {
 		$(this).removeClass('active');
@@ -320,6 +321,7 @@ function clearActiveDivs() {
 	});
 }
 
+// Activates the link
 function activateLink(e) {
 	$(e.target).addClass('active');
 	
@@ -330,6 +332,7 @@ function activateLink(e) {
 		$('#leftPanel').show();
 }
 
+// Activates the div
 function activateDiv(divId) {
 	$(divId).addClass('active');
 	$(divId).show();
@@ -338,6 +341,7 @@ function activateDiv(divId) {
 	scrollToContent(divId);
 }
 
+// Scrolls to the content
 function scrollToContent(divId) {
 	if ($(window).width() < 751) {
 		$('html, body').animate({

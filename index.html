@@ -3,30 +3,6 @@
 
 	<head>
 
-		<!-- Google Tag Manager -->
-		<script>
-			fetch('./assets/js/config.json')
-				.then(response => response.json())
-				.then(data => {
-					const gtmCode = data.googleAnalyticsCode;
-	
-					// Script para cargar Google Tag Manager
-					(function(w, d, s, l, i) {
-						w[l] = w[l] || [];
-						w[l].push({
-							'gtm.start': new Date().getTime(),
-							event: 'gtm.js'
-						});
-						var f = d.getElementsByTagName(s)[0],
-							j = d.createElement(s),
-							dl = l != 'dataLayer' ? '&l=' + l : '';
-						j.async = true;
-						j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-						f.parentNode.insertBefore(j, f);
-					})(window, document, 'script', 'dataLayer', gtmCode);
-				});
-		</script>
-
 		<!-- Meta tags -->
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,7 +16,7 @@
 		
 		<!-- Title + Icon -->
 		<title>Nicolas Meseguer</title>
-		<link rel="icon" type="image/x-icon" href="assets/img/NicolasMeseguer.ico">
+		<link rel="icon" type="image/x-icon" href="assets/documents/imgs/NicolasMeseguer.ico">
 
 		<!-- Improve SEO -->
 		<meta name="robots" content="index,follow" />
@@ -54,46 +30,26 @@
 
 	</head>
 
-	<!-- Google tag (gtag.js) -->
-	<!-- <script>
+	<!-- Google tag (gtag.js) & Google Analytics -->
+	<script>
         fetch('./assets/js/config.json')
             .then(response => response.json())
             .then(config => {
-                // Google Analytics
                 const scriptTag = document.createElement('script');
                 scriptTag.async = true;
-                scriptTag.src = `https://www.googletagmanager.com/gtag/js?id=${config.googleAnalyticsId}`;
+                scriptTag.src = `https://www.googletagmanager.com/gtag/js?id=${config.googleAnalyticsMeasurementId}`;
                 document.head.appendChild(scriptTag);
 
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
 
-                gtag('config', config.googleAnalyticsId);
+                gtag('config', config.googleAnalyticsMeasurementId);
             })
             .catch(error => console.error('Error loading the configuration:', error));
-    </script> -->
+    </script>
 
 	<body>
-
-		<!-- Google Tag Manager (noscript) -->
-		<noscript id="gtm-noscript-placeholder"></noscript>
-		<!-- End Google Tag Manager (noscript) -->
-		<script>
-			fetch('./assets/js/config.json')
-				.then(response => response.json())
-				.then(data => {
-					const gtmCode = data.googleAnalyticsCode;
-					const gtmNoscript = document.getElementById('gtm-noscript-placeholder');
-					const iframe = document.createElement('iframe');
-					iframe.src = `https://www.googletagmanager.com/ns.html?id=${gtmCode}`;
-					iframe.height = "0";
-					iframe.width = "0";
-					iframe.style.display = "none";
-					iframe.style.visibility = "hidden";
-					gtmNoscript.appendChild(iframe);
-				});
-		</script>
 
 		<!-- Bottom rounded button -->
 		<div class="options-button" id="options-toggler"><i class="fa-light fa-arrows-repeat"></i></div>
@@ -183,7 +139,7 @@
 				<div id="leftPanel" class="col-md-3 language">
 					<div class="row mb-3">
 						<div class="col">
-							<img src="assets/img/NicolasMeseguer.webp" class="rounded me-auto d-block img-fluid profilepicture" alt="Nicolas Meseguer profile picture">
+							<img src="assets/documents/imgs/NicolasMeseguer.webp" class="rounded me-auto d-block img-fluid profilepicture" alt="Nicolas Meseguer profile picture">
 						</div>
 					</div>
 
@@ -279,7 +235,7 @@
 						</div>
 
 						<div class="col-10">
-							<a href="https://fseneca.es/tfs/fpi/ficha/8362" class="link-dark" target="_blank"><img class="fseneca" src="/assets/img/fseneca-color.svg" alt="Fundación Séneca"></a>
+							<a href="https://fseneca.es/tfs/fpi/ficha/8362" class="link-dark" target="_blank"><img class="fseneca" src="/assets/documents/imgs/fseneca-color.svg" alt="Fundación Séneca"></a>
 						</div>
 					</div>
 				</div>
@@ -324,7 +280,7 @@
 								<li class="abme-honors-bullet mt-2">
 									<strong>🥈 Mercedes-Benz Talent Highway</strong>, <span data-es="con un modelo analítico de mercado predictivo" data-en="with a predictive analytical market model"></span> 
 									[<a href="./assets/documents/MercedesBenz2022NicolasMeseguer.pdf" class="link-dark" target="_blank">1</a>] 
-									[<a href="./assets/documents/imgs/NicolasMeseguerMercedes-Benz.jpg" class="link-dark" target="_blank">2</a>] 
+									[<a href="./assets/documents/imgs/honors_awards/NicolasMeseguerMercedes-Benz.jpg" class="link-dark" target="_blank">2</a>] 
 									- Nov, 2022
 								</li>
 
@@ -344,7 +300,7 @@
 
 								<li class="abme-honors-bullet mt-2">
 									<strong><span data-es="Premio Extraordinario" data-en="Extraordinary Award"></span></strong>, <span data-es="por el mejor Expediente Académico en Ingeniería Informática" data-en="for the Best Computer Engineering Academic Record"></span> (B.S.)
-									[<a href="./assets/documents/imgs/NicolasMeseguerAward.jpg" class="link-dark" target="_blank">1</a>] 
+									[<a href="./assets/documents/imgs/honors_awards/NicolasMeseguerAward.jpg" class="link-dark" target="_blank">1</a>] 
 									- Jun, 2022
 								</li>
 
@@ -356,7 +312,7 @@
 
 								<li class="abme-honors-bullet mt-2">
 									<strong><span data-es="Beca Erasmus+" data-en="Erasmus+ Scholarship"></span></strong>, <span data-es="para unas prácticas europeas" data-en="for a european internship"></span>
-									[<a href="./assets/documents/imgs/NicolasMeseguerGermany.png" class="link-dark" target="_blank">1</a>] 
+									[<a href="./assets/documents/imgs/honors_awards/NicolasMeseguerGermany.png" class="link-dark" target="_blank">1</a>] 
 									- Mar, 2018
 								</li>
 							</ul>
@@ -366,7 +322,7 @@
 							<div class="container">
 								<div class="row mt-3">
 									<div class="thumbnail col-md-3">
-										<img class="rounded mx-auto d-block img-fluid" src="/assets/img/NicolasMeseguerProgramming.webp" alt="Programming and Math">
+										<img class="rounded mx-auto d-block img-fluid" src="/assets/documents/imgs/hobbies/NicolasMeseguerProgramming.webp" alt="Programming and Math">
 									</div>
 									<div class="col-md-9" id="hobbie1">
 										<b 
@@ -387,7 +343,7 @@
 
 								<div class="row mt-5">
 									<div class="thumbnail col-md-3">
-										<img class="rounded mx-auto d-block img-fluid" src="/assets/img/NicolasMeseguerTailandia.webp" alt="Travelling">
+										<img class="rounded mx-auto d-block img-fluid" src="/assets/documents/imgs/hobbies/NicolasMeseguerTailandia.webp" alt="Travelling">
 									</div>
 									<div class="col-md-9" id="hobbie2">
 										<b 
@@ -406,7 +362,7 @@
 								
 								<div class="row mt-5">
 									<div class="thumbnail col-md-3">
-										<img class="rounded mx-auto d-block img-fluid" src="/assets/img/NicolasMeseguerYouTube.webp" alt="Content Creator on YouTube">
+										<img class="rounded mx-auto d-block img-fluid" src="/assets/documents/imgs/hobbies/NicolasMeseguerYouTube.webp" alt="Content Creator on YouTube">
 									</div>
 									<div class="col-md-9" id="hobbie3">
 										<b 

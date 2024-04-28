@@ -56,6 +56,7 @@
 - 📰 **BibTeX**: Add citations effortlessly and provide an easy way to copy it.
 - 🎨 **Customizable**: Easily change the theme colors and add your own touch.
 - 📊 **Insights**: Connect your portfolio to Google Analytics to get insights.
+- 🌐 **SPA**: Single Page Application for a seamless experience.
 - 🛠️ **Maintenance**: Regular updates and improvements.
 - 📚 **Documentation**: Detailed documentation to help you get started.
 
@@ -67,8 +68,10 @@
 3. Create a new branch called `gh-pages`.
 4. Go to the settings of your repository and enable GitHub Pages.
 5. Select the `gh-pages` branch as the source.
-6. Consider giving this repository a star if you liked it 🤍.
+6. Consider giving this repository a star if you found it useful 🤍.
 
+
+Now you can access your very own portfolio at `https://yourusername.github.io` 🚀.
 
 
 ## Multi-Language
@@ -104,9 +107,12 @@ We are working on a customization guide. Stay tuned! 🎨
 
 ## Insights
 
-1. Go to [Google Tag Manager](https://tagmanager.google.com/) and create a new account.
-2. Create a new container and look for the `GTM-XXXXXXX` code inside the scripts.
-3. Add the code to `assets/js/google-analytics.json` file.
+1. Go to [Google Analytics](https://analytics.google.com/) and create a new account.
+2. Once looged in, on the left sidebar, look for the `Manage` button.
+3. Under `Property Settings`, look for `Data collection and modification` > `Data flows` >  `Add flow`, and select `Web`.
+4. Fill in the required fields (Website URL and Name) and click on `Create flow`.
+5. Copy the `Measurement ID` (should look like `G-XXXXXXXXXX`) to `assets/js/config.json`.
+6. Eventually, you will be able to see your portfolio's insights on Google Analytics.
 
 ## Contributing
 
