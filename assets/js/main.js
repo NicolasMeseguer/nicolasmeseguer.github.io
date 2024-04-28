@@ -1,51 +1,19 @@
-// By default, all the divs are hidden, if you were to add a new div, you should hide it here.
-// If you want to show a div, you should clic on the corresponding link on the navbar.
-$('#educationContent').hide();
-$('#publicationsContent').hide();
-$('#experienceContent').hide();
-$('#conferencesContent').hide();
-$('#projectsContent').hide();
-$('#tutorialsContent').hide();
-$('#academicContent').hide();
-$('#particularContent').hide();
-
-// Options menu is hidden by default
-$('#theme').hide();
-$('#lan').hide();
-
-// Hides all the divs in the particular, unless the first one
-$('.particular-clickable').next().hide();
-$('.particular-clickable').next()[0].style.display="block";
-
 $(document).ready(function(){
+	// By default, all the divs are hidden, if you were to add a new div, you should hide it here.
+	// If you want to show a div, you should clic on the corresponding link on the navbar.
+	$('#educationContent').hide();
+	$('#publicationsContent').hide();
+	$('#experienceContent').hide();
+	$('#conferencesContent').hide();
+	$('#projectsContent').hide();
+	$('#blogContent').hide();
+	$('#academicContent').hide();
+	$('#particularContent').hide();
+	// $('#photosContent').hide();
 
-	// If the user has not selected a theme, then select the default one according to the user's preferences
-	if(localStorage.getItem("theme") === null){
-		localStorage.theme = "light";
-		if (window.matchMedia('(prefers-color-scheme: dark)').matches)
-			localStorage.theme = "dark";
-	}
-	
-	// Create the language manager
-	const langManager = new LanguageManager();
-
-	// Always load the light theme
-	$('<link>').appendTo('head').attr({
-		type: 'text/css', 
-		rel: 'stylesheet',
-		href: 'assets/css/light.css'
-	});
-
-	// If the user has the dark theme, then replace the light theme with the dark one
-	if (localStorage.theme == "dark") {
-		$("link[href='assets/css/light.css']").remove();
-		$('<link>').appendTo('head').attr({
-			type: 'text/css', 
-			rel: 'stylesheet',
-			href: 'assets/css/dark.css'
-		});
-		$('#theme').empty().append("<i class='fa-duotone fa-lightbulb-slash'></i>");
-	}
+	// Options menu is hidden by default
+	$('#theme').hide();
+	$('#lan').hide();
 
 	// Handle 'About Me' content
 	$('#aboutme').click(function(e) {
@@ -100,7 +68,7 @@ $(document).ready(function(){
 	});
 
 	// Handle 'Blog' content
-	$('#tutorials').click(function(e) {
+	$('#blog').click(function(e) {
 
 		// If the div has already the class active, no need to reload the divs...
 		if(!$(e.target).hasClass('active')) {
@@ -112,7 +80,7 @@ $(document).ready(function(){
 			clearActiveDivs();
 
 			// Show current content
-			activateDiv('#tutorialsContent');
+			activateDiv('#blogContent');
 		}
 	});
 
@@ -151,41 +119,59 @@ $(document).ready(function(){
 	});
 
 	// Handle 'Conferences' content
-	// $('#conferences').click(function(e) {
+	$('#conferences').click(function(e) {
 
-	// 	// If the div has already the class active, no need to reload the divs...
-	// 	if(!$(e.target).hasClass('active')) {
-	// 		// Update navbar
-	// 		clearActiveLinks();
-	// 		activateLink(e);
+		// If the div has already the class active, no need to reload the divs...
+		if(!$(e.target).hasClass('active')) {
+			// Update navbar
+			clearActiveLinks();
+			activateLink(e);
 
-	// 		// Hide other contents
-	// 		clearActiveDivs();
+			// Hide other contents
+			clearActiveDivs();
 
-	// 		// Show current content
-	// 		activateDiv('#conferencesContent');
-	// 	}
-	// });
+			// Show current content
+			activateDiv('#conferencesContent');
+		}
+	});
 
 	// Handle 'Experience' content
-	// $('#experience').click(function(e) {
+	$('#experience').click(function(e) {
 
-	// 	// If the div has already the class active, no need to reload the divs...
-	// 	if(!$(e.target).hasClass('active')) {
-	// 		// Update navbar
-	// 		clearActiveLinks();
-	// 		activateLink(e);
+		// If the div has already the class active, no need to reload the divs...
+		if(!$(e.target).hasClass('active')) {
+			// Update navbar
+			clearActiveLinks();
+			activateLink(e);
 
-	// 		// Hide other contents
-	// 		clearActiveDivs();
+			// Hide other contents
+			clearActiveDivs();
 
-	// 		// Show current content
-	// 		activateDiv('#experienceContent');
-	// 	}
-	// });
+			// Show current content
+			activateDiv('#experienceContent');
+		}
+	});
 
 	// Handle 'Projects' content
-	// $('#projects').click(function(e) {
+	$('#projects').click(function(e) {
+
+		// If the div has already the class active, no need to reload the divs...
+		if(!$(e.target).hasClass('active')) {
+			// Update navbar
+			clearActiveLinks();
+			activateLink(e);
+
+			// Hide other contents
+			clearActiveDivs();
+
+			// Show current content
+			activateDiv('#projectsContent');
+		}
+	});
+
+
+	// Handle 'Photos' content
+	// $('#photos').click(function(e) {
 
 	// 	// If the div has already the class active, no need to reload the divs...
 	// 	if(!$(e.target).hasClass('active')) {
@@ -197,46 +183,15 @@ $(document).ready(function(){
 	// 		clearActiveDivs();
 
 	// 		// Show current content
-	// 		activateDiv('#projectsContent');
+	// 		activateDiv('#photosContent');
 	// 	}
 	// });
 
+	// **************************** //
+	// Handles the Publications events
+	// **************************** //
 
-	// Handle 'Template' content
-	// $('#name').click(function(e) {
-
-	// 	// If the div has already the class active, no need to reload the divs...
-	// 	if(!$(e.target).hasClass('active')) {
-	// 		// Update navbar
-	// 		clearActiveLinks();
-	// 		activateLink(e);
-
-	// 		// Hide other contents
-	// 		clearActiveDivs();
-
-	// 		// Show current content
-	// 		activateDiv('#nameContent');
-	// 	}
-	// });
-
-	// Whenever you clic on a blog post, you should be redirected to that post' html
-	$('.clickable').click(function(e) {
-		window.open($(e.currentTarget)[0].childNodes[1].innerText, '_blank').focus();
-	});
-
-	// Whenever you clic on a clases particulares heading, you should toggle
-	$('.particular-clickable').click(function(e) {
-		var e = $(e.currentTarget)[0].nextElementSibling;
-		if (e.style.display === "none") {
-			e.style.display = "block";
-		}
-		else {
-			e.style.display = "none";
-		}
-	});
-
-	// Copy the citation to the clipboard
-	// THIS SHOULD BE THE SAME FOR ALL THE PAPERS
+	// Copies the citation to the clipboard
 	$(document).on("click", "#citation", function(){
 		var text = $(this).parent().parent().next()[0].innerHTML;
 
@@ -245,16 +200,44 @@ $(document).ready(function(){
 		toastr.success('Citation copied');
 	});
 
-	// Controls the URL; if it has '#blog'
-	// then trigger the 'Blog' clic
-	// if (((window.location).href).substring(((window.location).href).lastIndexOf('#') + 1) == 'tutorials') {
-	// 	$('#tutorials').click();
-	// 	$('#tutorialsContent').focus();
-	// }
+	// ******************** //
+	// Handles the Blog events
+	// ******************** //
 
-	if (((window.location).href).substring(((window.location).href).lastIndexOf('#') + 1) == 'clases-particulares') {
-		$('#particular').click();
-		$('#particularContent').focus();
+	// Opens the blog post in a new tab
+	$('.clickable').click(function(e) {
+		window.open($(e.currentTarget)[0].childNodes[1].innerText, '_blank').focus();
+	});
+
+
+	// *************************** //
+	// Handle the rest of the content
+	// Omit this part if you don't have more content
+	// *************************** //
+	
+	// If the user has not selected a theme, then select the default one according to the user's preferences
+	if(localStorage.getItem("theme") === null){
+		localStorage.theme = "light";
+		if (window.matchMedia('(prefers-color-scheme: dark)').matches)
+			localStorage.theme = "dark";
+	}
+
+	// Always load the light theme
+	$('<link>').appendTo('head').attr({
+		type: 'text/css', 
+		rel: 'stylesheet',
+		href: 'assets/css/light.css'
+	});
+
+	// If the user has the dark theme, then replace the light theme with the dark one
+	if (localStorage.theme == "dark") {
+		$("link[href='assets/css/light.css']").remove();
+		$('<link>').appendTo('head').attr({
+			type: 'text/css', 
+			rel: 'stylesheet',
+			href: 'assets/css/dark.css'
+		});
+		$('#theme').empty().append("<i class='fa-duotone fa-lightbulb-slash'></i>");
 	}
 
 	// Controls the option menu toggler to show/hide the language and theme selectors
@@ -299,6 +282,10 @@ $(document).ready(function(){
 		}
 	})
 
+	
+	// Create the language manager
+	const langManager = new LanguageManager();
+	
 	// Alternates between the different available languages
 	$('#lan').click(function() {
         const newLang = langManager.getNextLanguage();
