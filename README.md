@@ -1,13 +1,35 @@
 <!-- Improved compatibility of back to top link -->
 <a name="readme-top"></a>
 
-<p align="left">
 [![Contributors][contributors-shield]][contributors-url]
-<a href="https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/releases"><img src="https://img.shields.io/badge/version-alpha-8A2BE2" alt="Version Status"></a>
-<a href="https://github.com/Mowatave/amadeus"><img src="https://img.shields.io/badge/license-CC-blue" alt="License"></a>
-</p>
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![CC License][license-shield]][license-url]
+[![Version][version-shield]][version-url]
 
+<!-- Project Logo -->
+<br />
+<div align="center">
+  <a href="https://github.com/NicolasMeseguer/nicolasmeseguer.github.io">
+    <img src="assets/img/logo.png" alt="Logo" width="80" height="80">
+  </a>
 
+  <h3 align="center">Best Academic Portfolio</h3>
+
+  <p align="center">
+    An awesome academic portfolio template for GitHub Pages!
+    <br />
+    <a href="https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/blob/main/README.md"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://nicolasmeseguer.github.io/">View Demo</a>
+    ·
+    <a href="https://nicolasmeseguer.github.io/issues/new?labels=bug&template=_bug-report.md">Report Bug</a>
+    ·
+    <a href="https://nicolasmeseguer.github.io/issues/new?labels=enhancement&template=_feature-request.md">Request Feature</a>
+  </p>
+</div>
 
 Academic Portfolio
 ==================
@@ -76,3 +98,13 @@ License
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/NicolasMeseguer/nicolasmeseguer.github.io
 [contributors-url]: https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/NicolasMeseguer/nicolasmeseguer.github.io?style
+[forks-url]: https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/network/members
+[stars-shield]: https://img.shields.io/github/stars/NicolasMeseguer/nicolasmeseguer.github.io.svg?style
+[stars-url]: https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/network/stargazers
+[issues-shield]: https://img.shields.io/github/issues/NicolasMeseguer/nicolasmeseguer.github.io?style
+[issues-url]: https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/network/issues
+[license-shield]: https://img.shields.io/github/license/NicolasMeseguer/nicolasmeseguer.github.io?style
+[license-url]: http://creativecommons.org/licenses/by-sa/4.0/
+[version-shield]: https://img.shields.io/github/v/release/NicolasMeseguer/nicolasmeseguer.github.io?style
+[version-url]: https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/network/releases
