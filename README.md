@@ -47,10 +47,10 @@
 
 ## Key Features
 
+- 🎓 **Academic**: Perfect for students and academics.
 - 📦 **Easy to Use**: Just fork, edit and deploy!
 - 🚀 **Blazingly Fast**: Built with performance in mind.
 - 🌍 **Multi-Language**: Add multi-language support with ease.
-- 🎓 **Academic**: Perfect for students and academics.
 - 📱 **Responsive**: Works on all devices.
 - 🌙 **Dark Mode**: Toggle between light and dark mode.
 - 📰 **BibTeX**: Add citations effortlessly and provide an easy way to copy it.
