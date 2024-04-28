@@ -9,27 +9,27 @@
 <h4 align="center">An awesome academic portfolio template for GitHub Pages!</h4>
 
 <p align="center">
-  <a href="https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/graphs/contributors" target="_blank">
+  <a href="https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/graphs/contributors" target="_blank" style="text-decoration: none;">
     <img src="https://img.shields.io/github/contributors/NicolasMeseguer/nicolasmeseguer.github.io" alt="Contributors">
   </a>
   &nbsp;
-  <a href="https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/network/members" target="_blank">
+  <a href="https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/network/members" target="_blank" style="text-decoration: none;">
     <img src="https://img.shields.io/github/forks/NicolasMeseguer/nicolasmeseguer.github.io?style=" alt="Forks">
   </a>
   &nbsp;
-  <a href="https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/stargazers" target="_blank">
+  <a href="https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/stargazers" target="_blank" style="text-decoration: none;">
     <img src="https://img.shields.io/github/stars/NicolasMeseguer/nicolasmeseguer.github.io?style" alt="Stars">
   </a>
   &nbsp;
-  <a href="https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/issues" target="_blank">
+  <a href="https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/issues" target="_blank" style="text-decoration: none;">
     <img src="https://img.shields.io/github/issues/NicolasMeseguer/nicolasmeseguer.github.io" alt="Issues">
   </a>
   &nbsp;
-  <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">
+  <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank" style="text-decoration: none;">
     <img src="https://img.shields.io/github/license/NicolasMeseguer/nicolasmeseguer.github.io" alt="License">
   </a>
   &nbsp;
-  <a href="https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/releases" target="_blank">
+  <a href="https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/releases" target="_blank" style="text-decoration: none;">
     <img src="https://img.shields.io/github/v/release/NicolasMeseguer/nicolasmeseguer.github.io" alt="Version">
   </a>
   &nbsp;
