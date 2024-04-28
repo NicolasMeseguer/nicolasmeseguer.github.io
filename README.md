@@ -9,30 +9,36 @@
 <h4 align="center">An awesome academic portfolio template for GitHub Pages!</h4>
 
 <p align="center">
-  <a href="https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/graphs/contributors">
+  <a href="https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/graphs/contributors" target="_blank">
     <img src="https://img.shields.io/github/contributors/NicolasMeseguer/nicolasmeseguer.github.io" alt="Contributors">
   </a>
-  <a href="https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/network/members">
-    <img src="https://img.shields.io/github/forks/NicolasMeseguer/nicolasmeseguer.github.io?style" alt="Forks">
+  &nbsp;
+  <a href="https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/network/members" target="_blank">
+    <img src="https://img.shields.io/github/forks/NicolasMeseguer/nicolasmeseguer.github.io?style=" alt="Forks">
   </a>
-  <a href="https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/stargazers">
-    <img src="https://img.shields.io/github/stars/NicolasMeseguer/nicolasmeseguer.github.io.svg?style" alt="Stars">
+  &nbsp;
+  <a href="https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/stargazers" target="_blank">
+    <img src="https://img.shields.io/github/stars/NicolasMeseguer/nicolasmeseguer.github.io?style" alt="Stars">
   </a>
-  <a href="https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/issues">
-    <img src="https://img.shields.io/github/issues/NicolasMeseguer/nicolasmeseguer.github.io?style" alt="Issues">
+  &nbsp;
+  <a href="https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/issues" target="_blank">
+    <img src="https://img.shields.io/github/issues/NicolasMeseguer/nicolasmeseguer.github.io" alt="Issues">
   </a>
-  <a href="http://creativecommons.org/licenses/by-sa/4.0/">
-    <img src="https://img.shields.io/github/license/NicolasMeseguer/nicolasmeseguer.github.io?style" alt="License">
+  &nbsp;
+  <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">
+    <img src="https://img.shields.io/github/license/NicolasMeseguer/nicolasmeseguer.github.io" alt="License">
   </a>
-  <a href="https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/releases">
-    <img src="https://img.shields.io/github/v/release/NicolasMeseguer/nicolasmeseguer.github.io?style" alt="Version">
+  &nbsp;
+  <a href="https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/releases" target="_blank">
+    <img src="https://img.shields.io/github/v/release/NicolasMeseguer/nicolasmeseguer.github.io" alt="Version">
   </a>
+  &nbsp;
 </p>
 
 <p align="center">
-  <a href="https://nicolasmeseguer.github.io/">View Demo</a> •
-  <a href="https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/issues/new?labels=bug&template=_bug-report.md">Report Bug</a> •
-  <a href="https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/issues/new?labels=enhancement&template=_feature-request.md">Request Feature</a>
+  <a href="https://nicolasmeseguer.github.io/" target="_blank">View Demo</a> •
+  <a href="https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/issues/new?labels=bug&template=_bug-report.md" target="_blank">Report Bug</a> •
+  <a href="https://github.com/NicolasMeseguer/nicolasmeseguer.github.io/issues/new?labels=enhancement&template=_feature-request.md" target="_blank">Request Feature</a>
 </p>
 
 <p align="center">
